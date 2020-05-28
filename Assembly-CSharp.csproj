@@ -1,0 +1,2098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{F04F3B3F-2CC4-D00F-8085-B2E330FF40D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_21;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.21f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.21f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\ArcadaScript.cs" />
+    <Compile Include="Assets\ColliderGengiva.cs" />
+    <Compile Include="Assets\Equipamentos.cs" />
+    <Compile Include="Assets\HapticDentistPick.cs" />
+    <Compile Include="Assets\HapticMouse.cs" />
+    <Compile Include="Assets\HapticPlugin.cs" />
+    <Compile Include="Assets\HapticPluginSafetyScript.cs" />
+    <Compile Include="Assets\HapticSurfaceDental.cs" />
+    <Compile Include="Assets\LuzUV.cs" />
+    <Compile Include="Assets\Models\ToothModel\Scripts\ToothEventEmitter.cs" />
+    <Compile Include="Assets\NextScene.cs" />
+    <Compile Include="Assets\PanelMessage.cs" />
+    <Compile Include="Assets\TeethScript.cs" />
+    <None Include="Assets\Aparelho dental 1.obj" />
+    <None Include="Assets\Aparelho dental 1.obj.meta" />
+    <None Include="Assets\Aparelho dental 2.obj" />
+    <None Include="Assets\Aparelho dental 2.obj.meta" />
+    <None Include="Assets\ArcadaScript.cs.meta" />
+    <None Include="Assets\ColliderGengiva.cs.meta" />
+    <None Include="Assets\Equipamentos.cs.meta" />
+    <None Include="Assets\HapticDentistPick.cs.meta" />
+    <None Include="Assets\HapticMouse.cs.meta" />
+    <None Include="Assets\HapticPlugin.cs.meta" />
+    <None Include="Assets\HapticPlugin.meta" />
+    <None Include="Assets\HapticPluginSafetyScript.cs.meta" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.dll.meta" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.exp" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.exp.meta" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.iobj" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.iobj.meta" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.ipdb" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.ipdb.meta" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.lib" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.lib.meta" />
+    <None Include="Assets\HapticPlugin\OHToUnityBridge.pdb.meta" />
+    <None Include="Assets\HapticSurfaceDental.cs.meta" />
+    <None Include="Assets\LuzUV.cs.meta" />
+    <None Include="Assets\Materials.meta" />
+    <None Include="Assets\Materials\Blank.mtl" />
+    <None Include="Assets\Materials\Blank.mtl.meta" />
+    <None Include="Assets\Materials\Dente.mat" />
+    <None Include="Assets\Materials\Dente.mat.meta" />
+    <None Include="Assets\Materials\Plano.mat" />
+    <None Include="Assets\Materials\Plano.mat.meta" />
+    <None Include="Assets\Materials\Shaders.meta" />
+    <None Include="Assets\Materials\Shaders\PriorityParticleAlpha.shader.meta" />
+    <None Include="Assets\Materials\Shaders\SeparableAlpha.shader.meta" />
+    <None Include="Assets\Materials\Shaders\SlidingUV.shader.meta" />
+    <None Include="Assets\Materials\Shaders\UIOverlay.shader.meta" />
+    <None Include="Assets\Materials\Shaders\UnlitTransparentParam.shader" />
+    <None Include="Assets\Materials\Shaders\UIOverlay.shader" />
+    <None Include="Assets\Materials\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\Materials\Shaders\SlidingUV.shader" />
+    <None Include="Assets\Materials\Shaders\SeparableAlpha.shader" />
+    <None Include="Assets\Materials\Shaders\UnlitTransparentParam.shader.meta" />
+    <None Include="Assets\Materials\Textures.meta" />
+    <None Include="Assets\Materials\Textures\Temp.meta" />
+    <None Include="Assets\Materials\Textures\Temp\bin.meta" />
+    <None Include="Assets\Materials\Textures\Temp\bin\Debug.meta" />
+    <None Include="Assets\Materials\Textures\Temp\ProcessJobs.meta" />
+    <None Include="Assets\Materials\Textures\Temp\__Backupscenes.meta" />
+    <None Include="Assets\Materials\Textures\texture.jpg.meta" />
+    <None Include="Assets\Materials\Textures\texture_.jpg.meta" />
+    <None Include="Assets\Models.meta" />
+    <None Include="Assets\Models\16972_dentist_pick.obj" />
+    <None Include="Assets\Models\16972_dentist_pick.obj.meta" />
+    <None Include="Assets\Models\17221_Curette.obj" />
+    <None Include="Assets\Models\17221_Curette.obj.meta" />
+    <None Include="Assets\Models\Chair.meta" />
+    <None Include="Assets\Models\Chair\dental_chair.fbx" />
+    <None Include="Assets\Models\Chair\dental_chair.fbx.meta" />
+    <None Include="Assets\Models\Chair\Materials.meta" />
+    <None Include="Assets\Models\Chair\Materials\BP.mat" />
+    <None Include="Assets\Models\Chair\Materials\BP.mat.meta" />
+    <None Include="Assets\Models\Chair\Materials\chrome08 210.mat" />
+    <None Include="Assets\Models\Chair\Materials\chrome08 210.mat.meta" />
+    <None Include="Assets\Models\Chair\Materials\Leather brown  g.mat" />
+    <None Include="Assets\Models\Chair\Materials\Leather brown  g.mat.meta" />
+    <None Include="Assets\Models\Chair\Materials\Material #256.mat" />
+    <None Include="Assets\Models\Chair\Materials\Material #256.mat.meta" />
+    <None Include="Assets\Models\Chair\Materials\Rat textile 1.mat" />
+    <None Include="Assets\Models\Chair\Materials\Rat textile 1.mat.meta" />
+    <None Include="Assets\Models\Chair\Materials\walls_2 ___.mat" />
+    <None Include="Assets\Models\Chair\Materials\walls_2 ___.mat.meta" />
+    <None Include="Assets\Models\Chair\Materials\________________________.mat" />
+    <None Include="Assets\Models\Chair\Materials\________________________.mat.meta" />
+    <None Include="Assets\Models\compactor.meta" />
+    <None Include="Assets\Models\compactor\compactor.fbx" />
+    <None Include="Assets\Models\compactor\compactor.fbx.meta" />
+    <None Include="Assets\Models\compactor\Materials.meta" />
+    <None Include="Assets\Models\compactor\Materials\No Name.mat" />
+    <None Include="Assets\Models\compactor\Materials\No Name.mat.meta" />
+    <None Include="Assets\Models\drill.meta" />
+    <None Include="Assets\Models\drill\drill.FBX" />
+    <None Include="Assets\Models\drill\drill.FBX.meta" />
+    <None Include="Assets\Models\drill\Materials.meta" />
+    <None Include="Assets\Models\drill\Materials\drill_texture.mat" />
+    <None Include="Assets\Models\drill\Materials\drill_texture.mat.meta" />
+    <None Include="Assets\Models\drill\Materials\No Name.mat" />
+    <None Include="Assets\Models\drill\Materials\No Name.mat.meta" />
+    <None Include="Assets\Models\drill\textures.meta" />
+    <None Include="Assets\Models\drill\textures\drill_DIFF.tga" />
+    <None Include="Assets\Models\drill\textures\drill_DIFF.tga.meta" />
+    <None Include="Assets\Models\drill\textures\drill_METALLIC.tga" />
+    <None Include="Assets\Models\drill\textures\drill_METALLIC.tga.meta" />
+    <None Include="Assets\Models\drill\textures\drill_NORM.tga" />
+    <None Include="Assets\Models\drill\textures\drill_NORM.tga.meta" />
+    <None Include="Assets\Models\excavator.meta" />
+    <None Include="Assets\Models\excavator\excavator_mesh.FBX" />
+    <None Include="Assets\Models\excavator\excavator_mesh.FBX.meta" />
+    <None Include="Assets\Models\excavator\Materials.meta" />
+    <None Include="Assets\Models\excavator\Materials\Excavator_MAT.mat" />
+    <None Include="Assets\Models\excavator\Materials\Excavator_MAT.mat.meta" />
+    <None Include="Assets\Models\excavator\Materials\No Name.mat" />
+    <None Include="Assets\Models\excavator\Materials\No Name.mat.meta" />
+    <None Include="Assets\Models\excavator\textures.meta" />
+    <None Include="Assets\Models\excavator\textures\excavator_mesh_DefaultMaterial_AlbedoTransparency.png.meta" />
+    <None Include="Assets\Models\excavator\textures\excavator_mesh_DefaultMaterial_MetallicSmoothness.png.meta" />
+    <None Include="Assets\Models\excavator\textures\excavator_mesh_DefaultMaterial_Normal.png.meta" />
+    <None Include="Assets\Models\filler.meta" />
+    <None Include="Assets\Models\filler\Final_filler.fbx" />
+    <None Include="Assets\Models\filler\Final_filler.fbx.meta" />
+    <None Include="Assets\Models\filler\Materials.meta" />
+    <None Include="Assets\Models\filler\Materials\No Name.mat" />
+    <None Include="Assets\Models\filler\Materials\No Name.mat.meta" />
+    <None Include="Assets\Models\Final_UV_light.fbx" />
+    <None Include="Assets\Models\Final_UV_light.fbx.meta" />
+    <None Include="Assets\Models\LabAcima.meta" />
+    <None Include="Assets\Models\LabAcima\DenteAcima.obj" />
+    <None Include="Assets\Models\LabAcima\DenteAcima.obj.meta" />
+    <None Include="Assets\Models\LabAcima\DrillAcima.obj" />
+    <None Include="Assets\Models\LabAcima\DrillAcima.obj.meta" />
+    <None Include="Assets\Models\Materials.meta" />
+    <None Include="Assets\Models\Materials\No Name.mat" />
+    <None Include="Assets\Models\Materials\No Name.mat.meta" />
+    <None Include="Assets\Models\patient.meta" />
+    <None Include="Assets\Models\patient\affectedteeth.meta" />
+    <None Include="Assets\Models\patient\affectedteeth\cavitytooth.FBX" />
+    <None Include="Assets\Models\patient\affectedteeth\cavitytooth.FBX.meta" />
+    <None Include="Assets\Models\patient\affectedteeth\healedtooth.FBX" />
+    <None Include="Assets\Models\patient\affectedteeth\healedtooth.FBX.meta" />
+    <None Include="Assets\Models\patient\affectedteeth\Materials.meta" />
+    <None Include="Assets\Models\patient\affectedteeth\Materials\01 - Default.mat" />
+    <None Include="Assets\Models\patient\affectedteeth\Materials\01 - Default.mat.meta" />
+    <None Include="Assets\Models\patient\affectedteeth\Materials\ToothMat.mat" />
+    <None Include="Assets\Models\patient\affectedteeth\Materials\ToothMat.mat.meta" />
+    <None Include="Assets\Models\patient\cavitytooth.tga" />
+    <None Include="Assets\Models\patient\cavitytooth.tga.meta" />
+    <None Include="Assets\Models\patient\Materials.meta" />
+    <None Include="Assets\Models\patient\Materials\DefaultSkin.004.mat" />
+    <None Include="Assets\Models\patient\Materials\DefaultSkin.004.mat.meta" />
+    <None Include="Assets\Models\patient\Materials\greymat.mat" />
+    <None Include="Assets\Models\patient\Materials\greymat.mat.meta" />
+    <None Include="Assets\Models\patient\Materials\New Material.mat" />
+    <None Include="Assets\Models\patient\Materials\New Material.mat.meta" />
+    <None Include="Assets\Models\patient\Materials\teeth.mat" />
+    <None Include="Assets\Models\patient\Materials\teeth.mat.meta" />
+    <None Include="Assets\Models\patient\patient.fbx" />
+    <None Include="Assets\Models\patient\patient.fbx.meta" />
+    <None Include="Assets\Models\patient\teeth.fbx" />
+    <None Include="Assets\Models\patient\teeth.fbx.meta" />
+    <None Include="Assets\Models\tooth.FBX" />
+    <None Include="Assets\Models\tooth.FBX.meta" />
+    <None Include="Assets\Models\tooth.obj" />
+    <None Include="Assets\Models\tooth.obj.meta" />
+    <None Include="Assets\Models\ToothModel.meta" />
+    <None Include="Assets\Models\ToothModel\Materials.meta" />
+    <None Include="Assets\Models\ToothModel\Materials\badtooth.mat" />
+    <None Include="Assets\Models\ToothModel\Materials\badtooth.mat.meta" />
+    <None Include="Assets\Models\ToothModel\Materials\teeth.mat" />
+    <None Include="Assets\Models\ToothModel\Materials\teeth.mat.meta" />
+    <None Include="Assets\Models\ToothModel\Materials\white.mat" />
+    <None Include="Assets\Models\ToothModel\Materials\white.mat.meta" />
+    <None Include="Assets\Models\ToothModel\Scripts.meta" />
+    <None Include="Assets\Models\ToothModel\Scripts\ToothEventEmitter.cs.meta" />
+    <None Include="Assets\Models\ToothModel\teeth-sep.fbx" />
+    <None Include="Assets\Models\ToothModel\teeth-sep.fbx.meta" />
+    <None Include="Assets\NextScene.cs.meta" />
+    <None Include="Assets\PanelMessage.cs.meta" />
+    <None Include="Assets\Scenes.meta" />
+    <None Include="Assets\Scenes\MikeSceneModified.unity" />
+    <None Include="Assets\Scenes\MikeSceneModified.unity.meta" />
+    <None Include="Assets\Scenes\Scene.unity" />
+    <None Include="Assets\Scenes\Scene.unity.meta" />
+    <None Include="Assets\Scenes\Secundaria.unity" />
+    <None Include="Assets\Scenes\Secundaria.unity.meta" />
+    <None Include="Assets\TeethScript.cs.meta" />
+    <None Include="Library\AnnotationManager" />
+    <None Include="Library\assetDatabase3" />
+    <None Include="Library\AssetImportState" />
+    <None Include="Library\BuildPlayer.prefs" />
+    <None Include="Library\BuildSettings.asset" />
+    <None Include="Library\CurrentLayout.dwlt" />
+    <None Include="Library\CurrentMaximizeLayout.dwlt" />
+    <None Include="Library\EditorInstance.json" />
+    <None Include="Library\EditorUserBuildSettings.asset" />
+    <None Include="Library\EditorUserSettings.asset" />
+    <None Include="Library\expandedItems" />
+    <None Include="Library\InspectorExpandedItems.asset" />
+    <None Include="Library\metadata\00\00000000000000001000000000000000" />
+    <None Include="Library\metadata\00\00000000000000001000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000002000000000000000" />
+    <None Include="Library\metadata\00\00000000000000002000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000003000000000000000" />
+    <None Include="Library\metadata\00\00000000000000003000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000004000000000000000" />
+    <None Include="Library\metadata\00\00000000000000004000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000004100000000000000" />
+    <None Include="Library\metadata\00\00000000000000004100000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000005000000000000000" />
+    <None Include="Library\metadata\00\00000000000000005000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000005100000000000000" />
+    <None Include="Library\metadata\00\00000000000000005100000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000006000000000000000" />
+    <None Include="Library\metadata\00\00000000000000006000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000006100000000000000" />
+    <None Include="Library\metadata\00\00000000000000006100000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000007000000000000000" />
+    <None Include="Library\metadata\00\00000000000000007000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000007100000000000000" />
+    <None Include="Library\metadata\00\00000000000000007100000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000008000000000000000" />
+    <None Include="Library\metadata\00\00000000000000008000000000000000.info" />
+    <None Include="Library\metadata\00\00000000000000009000000000000000" />
+    <None Include="Library\metadata\00\00000000000000009000000000000000.info" />
+    <None Include="Library\metadata\00\0000000000000000a100000000000000" />
+    <None Include="Library\metadata\00\0000000000000000a100000000000000.info" />
+    <None Include="Library\metadata\00\0000000000000000b000000000000000" />
+    <None Include="Library\metadata\00\0000000000000000b000000000000000.info" />
+    <None Include="Library\metadata\00\0000000000000000b100000000000000" />
+    <None Include="Library\metadata\00\0000000000000000b100000000000000.info" />
+    <None Include="Library\metadata\00\0000000000000000c000000000000000" />
+    <None Include="Library\metadata\00\0000000000000000c000000000000000.info" />
+    <None Include="Library\metadata\00\005c4d80949154e5c87348bb9f5d15eb" />
+    <None Include="Library\metadata\00\005c4d80949154e5c87348bb9f5d15eb.info" />
+    <None Include="Library\metadata\01\01cd264c206ae482393dc9d04b26eca0" />
+    <None Include="Library\metadata\01\01cd264c206ae482393dc9d04b26eca0.info" />
+    <None Include="Library\metadata\01\01e02995805eb483690380a911a657e2" />
+    <None Include="Library\metadata\01\01e02995805eb483690380a911a657e2.info" />
+    <None Include="Library\metadata\02\02893ffb522b490a9fa28eedd2584309" />
+    <None Include="Library\metadata\02\02893ffb522b490a9fa28eedd2584309.info" />
+    <None Include="Library\metadata\03\0386b6eb838c47138cd51d1c1b879a35" />
+    <None Include="Library\metadata\03\0386b6eb838c47138cd51d1c1b879a35.info" />
+    <None Include="Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb" />
+    <None Include="Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb.info" />
+    <None Include="Library\metadata\04\04a1037e8b581334898926abb213ba43" />
+    <None Include="Library\metadata\04\04a1037e8b581334898926abb213ba43.info" />
+    <None Include="Library\metadata\05\058cba836c1846c3aa1c5fd2e28aea77" />
+    <None Include="Library\metadata\05\058cba836c1846c3aa1c5fd2e28aea77.info" />
+    <None Include="Library\metadata\05\05bcb4ef9d9153547b792d116f58c718" />
+    <None Include="Library\metadata\05\05bcb4ef9d9153547b792d116f58c718.info" />
+    <None Include="Library\metadata\05\05f5bfd584002f948982a1498890f9a9" />
+    <None Include="Library\metadata\05\05f5bfd584002f948982a1498890f9a9.info" />
+    <None Include="Library\metadata\05\05f7f519769978b79b31d063a7fc6fa1" />
+    <None Include="Library\metadata\05\05f7f519769978b79b31d063a7fc6fa1.info" />
+    <None Include="Library\metadata\06\0621b4aab2236437592f1f292cb81d20" />
+    <None Include="Library\metadata\06\0621b4aab2236437592f1f292cb81d20.info" />
+    <None Include="Library\metadata\06\063774d2ff01c43719d93b2d95e298b3" />
+    <None Include="Library\metadata\06\063774d2ff01c43719d93b2d95e298b3.info" />
+    <None Include="Library\metadata\06\063b1587caa4a47f396741f4e69d108c" />
+    <None Include="Library\metadata\06\063b1587caa4a47f396741f4e69d108c.info" />
+    <None Include="Library\metadata\06\066619c9c9c84f89acb1b48c11a7efe2" />
+    <None Include="Library\metadata\06\066619c9c9c84f89acb1b48c11a7efe2.info" />
+    <None Include="Library\metadata\06\06b575597b644fe8ba88495149d01b66" />
+    <None Include="Library\metadata\06\06b575597b644fe8ba88495149d01b66.info" />
+    <None Include="Library\metadata\06\06f8e3404d534cab82fe852ff33dad77" />
+    <None Include="Library\metadata\06\06f8e3404d534cab82fe852ff33dad77.info" />
+    <None Include="Library\metadata\07\072450ffed31fe545a60f71f33f53916" />
+    <None Include="Library\metadata\07\072450ffed31fe545a60f71f33f53916.info" />
+    <None Include="Library\metadata\07\07994bfe8b0e4adb97d706de5dea48d5" />
+    <None Include="Library\metadata\07\07994bfe8b0e4adb97d706de5dea48d5.info" />
+    <None Include="Library\metadata\09\09a4edcd8f9b1da439e8c91766d1cdbd" />
+    <None Include="Library\metadata\09\09a4edcd8f9b1da439e8c91766d1cdbd.info" />
+    <None Include="Library\metadata\09\09e28640d754a611467eebfb261ed749" />
+    <None Include="Library\metadata\09\09e28640d754a611467eebfb261ed749.info" />
+    <None Include="Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c" />
+    <None Include="Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c.info" />
+    <None Include="Library\metadata\0a\0a2c7bcbdfe0a438999cb0653789cdf4" />
+    <None Include="Library\metadata\0a\0a2c7bcbdfe0a438999cb0653789cdf4.info" />
+    <None Include="Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec" />
+    <None Include="Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec.info" />
+    <None Include="Library\metadata\0c\0c156a7b2f4d450da1716b1625b5441d" />
+    <None Include="Library\metadata\0c\0c156a7b2f4d450da1716b1625b5441d.info" />
+    <None Include="Library\metadata\0d\0d2d0f36e67d4518a07df76235e91f9a" />
+    <None Include="Library\metadata\0d\0d2d0f36e67d4518a07df76235e91f9a.info" />
+    <None Include="Library\metadata\0d\0d3bb855445e36e479c85976fc88383a" />
+    <None Include="Library\metadata\0d\0d3bb855445e36e479c85976fc88383a.info" />
+    <None Include="Library\metadata\0d\0d9a36012a224080966c7b55896aa0f9" />
+    <None Include="Library\metadata\0d\0d9a36012a224080966c7b55896aa0f9.info" />
+    <None Include="Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84" />
+    <None Include="Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84.info" />
+    <None Include="Library\metadata\0e\0e751e877ed14d71a6b8e63ac54949cf" />
+    <None Include="Library\metadata\0e\0e751e877ed14d71a6b8e63ac54949cf.info" />
+    <None Include="Library\metadata\0e\0ea92adf6aad9c74e803637a81ff9fc8" />
+    <None Include="Library\metadata\0e\0ea92adf6aad9c74e803637a81ff9fc8.info" />
+    <None Include="Library\metadata\0e\0edd86f97b0648f685604a5582cff608" />
+    <None Include="Library\metadata\0e\0edd86f97b0648f685604a5582cff608.info" />
+    <None Include="Library\metadata\10\10145f279f90346bbb61712ff585828b" />
+    <None Include="Library\metadata\10\10145f279f90346bbb61712ff585828b.info" />
+    <None Include="Library\metadata\10\1048a87135154606808bf2030da32d18" />
+    <None Include="Library\metadata\10\1048a87135154606808bf2030da32d18.info" />
+    <None Include="Library\metadata\10\1067213df0c64b319bc81e73be809b1a" />
+    <None Include="Library\metadata\10\1067213df0c64b319bc81e73be809b1a.info" />
+    <None Include="Library\metadata\10\10a526294333b45d0916e3da00f0e1fe" />
+    <None Include="Library\metadata\10\10a526294333b45d0916e3da00f0e1fe.info" />
+    <None Include="Library\metadata\10\10bf81265ad87424d946598c575f45a0" />
+    <None Include="Library\metadata\10\10bf81265ad87424d946598c575f45a0.info" />
+    <None Include="Library\metadata\11\1158e311a3101950348dcecb1bebc42d" />
+    <None Include="Library\metadata\11\1158e311a3101950348dcecb1bebc42d.info" />
+    <None Include="Library\metadata\11\11a6a034ab84493cbed6af5ae7aae78b" />
+    <None Include="Library\metadata\11\11a6a034ab84493cbed6af5ae7aae78b.info" />
+    <None Include="Library\metadata\11\11e510dace8c9fe4a9eaf82a3584c5c8" />
+    <None Include="Library\metadata\11\11e510dace8c9fe4a9eaf82a3584c5c8.info" />
+    <None Include="Library\metadata\12\12736c98af174f91827a26b66d2b01b9" />
+    <None Include="Library\metadata\12\12736c98af174f91827a26b66d2b01b9.info" />
+    <None Include="Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333" />
+    <None Include="Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333.info" />
+    <None Include="Library\metadata\13\1322fd896bbb15bb6e335591b766ae62" />
+    <None Include="Library\metadata\13\1322fd896bbb15bb6e335591b766ae62.info" />
+    <None Include="Library\metadata\13\13eb80ce50ac9c43cdbaf2109c0ec7db" />
+    <None Include="Library\metadata\13\13eb80ce50ac9c43cdbaf2109c0ec7db.info" />
+    <None Include="Library\metadata\15\157386cd529ecb245bdbbca8bd027727" />
+    <None Include="Library\metadata\15\157386cd529ecb245bdbbca8bd027727.info" />
+    <None Include="Library\metadata\15\15a615c733aa240909fe0b28b0d5143c" />
+    <None Include="Library\metadata\15\15a615c733aa240909fe0b28b0d5143c.info" />
+    <None Include="Library\metadata\15\15be9c691b85a41a39c18beeff87e21b" />
+    <None Include="Library\metadata\15\15be9c691b85a41a39c18beeff87e21b.info" />
+    <None Include="Library\metadata\15\15bf9c691b85b41a39c18bee2f87e21b" />
+    <None Include="Library\metadata\15\15bf9c691b85b41a39c18bee2f87e21b.info" />
+    <None Include="Library\metadata\16\1634b8cf6fe522449aae40f121d55c24" />
+    <None Include="Library\metadata\16\1634b8cf6fe522449aae40f121d55c24.info" />
+    <None Include="Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf" />
+    <None Include="Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf.info" />
+    <None Include="Library\metadata\16\163eb75809a87f74c988e100108960c8" />
+    <None Include="Library\metadata\16\163eb75809a87f74c988e100108960c8.info" />
+    <None Include="Library\metadata\17\178008567c08e6d84014fa87825d10bb" />
+    <None Include="Library\metadata\17\178008567c08e6d84014fa87825d10bb.info" />
+    <None Include="Library\metadata\17\17b632677410799367a53dc7ab96a8c2" />
+    <None Include="Library\metadata\17\17b632677410799367a53dc7ab96a8c2.info" />
+    <None Include="Library\metadata\17\17dfdb089f10445c78bcc4f5ec718217" />
+    <None Include="Library\metadata\17\17dfdb089f10445c78bcc4f5ec718217.info" />
+    <None Include="Library\metadata\18\18775b51e3bd42299fd30bd036ea982f" />
+    <None Include="Library\metadata\18\18775b51e3bd42299fd30bd036ea982f.info" />
+    <None Include="Library\metadata\18\18a4fadfef534684d5af39ca8dc48fe9" />
+    <None Include="Library\metadata\18\18a4fadfef534684d5af39ca8dc48fe9.info" />
+    <None Include="Library\metadata\19\19ead9387dc9ef14fad0436a846268f7" />
+    <None Include="Library\metadata\19\19ead9387dc9ef14fad0436a846268f7.info" />
+    <None Include="Library\metadata\1a\1a4266815e998967becf686f9c71f0a6" />
+    <None Include="Library\metadata\1a\1a4266815e998967becf686f9c71f0a6.info" />
+    <None Include="Library\metadata\1a\1a5c6b8769874ce45b865f2f32aed323" />
+    <None Include="Library\metadata\1a\1a5c6b8769874ce45b865f2f32aed323.info" />
+    <None Include="Library\metadata\1b\1b06bcba260bc204e81c35e43d1c58c3" />
+    <None Include="Library\metadata\1b\1b06bcba260bc204e81c35e43d1c58c3.info" />
+    <None Include="Library\metadata\1b\1b2b92e7dc0686442b2194cb4dbfd746" />
+    <None Include="Library\metadata\1b\1b2b92e7dc0686442b2194cb4dbfd746.info" />
+    <None Include="Library\metadata\1b\1b32bcce201b4494ea8848326290c5d5" />
+    <None Include="Library\metadata\1b\1b32bcce201b4494ea8848326290c5d5.info" />
+    <None Include="Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62" />
+    <None Include="Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62.info" />
+    <None Include="Library\metadata\1b\1be25132fa5e54b0ea23a23f7ceab7cc" />
+    <None Include="Library\metadata\1b\1be25132fa5e54b0ea23a23f7ceab7cc.info" />
+    <None Include="Library\metadata\1c\1c68b8b69fc87ac4faae569e40dcf24e" />
+    <None Include="Library\metadata\1c\1c68b8b69fc87ac4faae569e40dcf24e.info" />
+    <None Include="Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77" />
+    <None Include="Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77.info" />
+    <None Include="Library\metadata\1c\1cf2469083ffa484da4d78dd70d708e8" />
+    <None Include="Library\metadata\1c\1cf2469083ffa484da4d78dd70d708e8.info" />
+    <None Include="Library\metadata\1c\1cf679539c5e5499e8856aaacf1fc32f" />
+    <None Include="Library\metadata\1c\1cf679539c5e5499e8856aaacf1fc32f.info" />
+    <None Include="Library\metadata\20\201535de6aef94e958deca2f11ad8244" />
+    <None Include="Library\metadata\20\201535de6aef94e958deca2f11ad8244.info" />
+    <None Include="Library\metadata\20\204a570cd0814334ba2fd79718030cc0" />
+    <None Include="Library\metadata\20\204a570cd0814334ba2fd79718030cc0.info" />
+    <None Include="Library\metadata\20\2062721d247ef4a3d9a3ccc298c235ed" />
+    <None Include="Library\metadata\20\2062721d247ef4a3d9a3ccc298c235ed.info" />
+    <None Include="Library\metadata\20\20a8ca0a6d82545f6bfd6f2d898d61f7" />
+    <None Include="Library\metadata\20\20a8ca0a6d82545f6bfd6f2d898d61f7.info" />
+    <None Include="Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa" />
+    <None Include="Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa.info" />
+    <None Include="Library\metadata\20\20ec447ac5e2d304483dfe2d6769df6c" />
+    <None Include="Library\metadata\20\20ec447ac5e2d304483dfe2d6769df6c.info" />
+    <None Include="Library\metadata\21\21c0044a7f964773be90d197a78e4703" />
+    <None Include="Library\metadata\21\21c0044a7f964773be90d197a78e4703.info" />
+    <None Include="Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1" />
+    <None Include="Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1.info" />
+    <None Include="Library\metadata\22\220224b43fc464c28bc0e8de8f54a432" />
+    <None Include="Library\metadata\22\220224b43fc464c28bc0e8de8f54a432.info" />
+    <None Include="Library\metadata\22\220e9325710f4235a43492dd1ee4980d" />
+    <None Include="Library\metadata\22\220e9325710f4235a43492dd1ee4980d.info" />
+    <None Include="Library\metadata\22\22464cf7ab0243a6bf9c79851183b002" />
+    <None Include="Library\metadata\22\22464cf7ab0243a6bf9c79851183b002.info" />
+    <None Include="Library\metadata\22\224ede67b4f3a4109bfec4d5cb161b05" />
+    <None Include="Library\metadata\22\224ede67b4f3a4109bfec4d5cb161b05.info" />
+    <None Include="Library\metadata\23\2300e75732d74890b38a8ff257a3ae15" />
+    <None Include="Library\metadata\23\2300e75732d74890b38a8ff257a3ae15.info" />
+    <None Include="Library\metadata\23\23805a7a1623842b0b7b21158066bd90" />
+    <None Include="Library\metadata\23\23805a7a1623842b0b7b21158066bd90.info" />
+    <None Include="Library\metadata\23\23a562f2cac6401f9f91251c68a1a794" />
+    <None Include="Library\metadata\23\23a562f2cac6401f9f91251c68a1a794.info" />
+    <None Include="Library\metadata\25\25ebe415cc14c4f4ea15c34a796b75bb" />
+    <None Include="Library\metadata\25\25ebe415cc14c4f4ea15c34a796b75bb.info" />
+    <None Include="Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485" />
+    <None Include="Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485.info" />
+    <None Include="Library\metadata\26\2682a692a2be7e14e901a738c7806da0" />
+    <None Include="Library\metadata\26\2682a692a2be7e14e901a738c7806da0.info" />
+    <None Include="Library\metadata\26\26a4f29db434fd79025c91f6126382cc" />
+    <None Include="Library\metadata\26\26a4f29db434fd79025c91f6126382cc.info" />
+    <None Include="Library\metadata\27\2705215ac5b84b70bacc50632be6e391" />
+    <None Include="Library\metadata\27\2705215ac5b84b70bacc50632be6e391.info" />
+    <None Include="Library\metadata\27\27a0335dab59ec542aadd6636a5b4ebd" />
+    <None Include="Library\metadata\27\27a0335dab59ec542aadd6636a5b4ebd.info" />
+    <None Include="Library\metadata\27\27aa00614f4aa4043afab89e738df3a0" />
+    <None Include="Library\metadata\27\27aa00614f4aa4043afab89e738df3a0.info" />
+    <None Include="Library\metadata\28\2808ba6bccb2478ec9c7209d8bf1f3cc" />
+    <None Include="Library\metadata\28\2808ba6bccb2478ec9c7209d8bf1f3cc.info" />
+    <None Include="Library\metadata\28\28375447bcea455c9b51a6650b10c9d7" />
+    <None Include="Library\metadata\28\28375447bcea455c9b51a6650b10c9d7.info" />
+    <None Include="Library\metadata\28\28542eca5f1b4c64813acfbd512524b6" />
+    <None Include="Library\metadata\28\28542eca5f1b4c64813acfbd512524b6.info" />
+    <None Include="Library\metadata\29\29c0cee3ab184b708f4a33663c974d92" />
+    <None Include="Library\metadata\29\29c0cee3ab184b708f4a33663c974d92.info" />
+    <None Include="Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694" />
+    <None Include="Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694.info" />
+    <None Include="Library\metadata\2b\2b3002c18d29d41b0898ab58bc6ee10d" />
+    <None Include="Library\metadata\2b\2b3002c18d29d41b0898ab58bc6ee10d.info" />
+    <None Include="Library\metadata\2b\2b908ace30660e54c975ed16ac7ef702" />
+    <None Include="Library\metadata\2b\2b908ace30660e54c975ed16ac7ef702.info" />
+    <None Include="Library\metadata\2c\2c814623cb42764d304be0c5ddd03ceb" />
+    <None Include="Library\metadata\2c\2c814623cb42764d304be0c5ddd03ceb.info" />
+    <None Include="Library\metadata\2c\2ce4bbcc4722440890a03312706037fe" />
+    <None Include="Library\metadata\2c\2ce4bbcc4722440890a03312706037fe.info" />
+    <None Include="Library\metadata\2d\2d142b475fbfb8cf12ba3a795194300a" />
+    <None Include="Library\metadata\2d\2d142b475fbfb8cf12ba3a795194300a.info" />
+    <None Include="Library\metadata\2d\2d4d46c70fdd242668a56e99799e8540" />
+    <None Include="Library\metadata\2d\2d4d46c70fdd242668a56e99799e8540.info" />
+    <None Include="Library\metadata\2d\2d6ba5cbe47e6ad3c87474c56174d4e0" />
+    <None Include="Library\metadata\2d\2d6ba5cbe47e6ad3c87474c56174d4e0.info" />
+    <None Include="Library\metadata\2d\2d77b2d58287d46a6a61f12c861bfc2f" />
+    <None Include="Library\metadata\2d\2d77b2d58287d46a6a61f12c861bfc2f.info" />
+    <None Include="Library\metadata\2d\2d8e57e8151db88439203ab53def99ea" />
+    <None Include="Library\metadata\2d\2d8e57e8151db88439203ab53def99ea.info" />
+    <None Include="Library\metadata\2d\2da0c512f12947e489f739169773d7ca" />
+    <None Include="Library\metadata\2d\2da0c512f12947e489f739169773d7ca.info" />
+    <None Include="Library\metadata\2e\2e2c7a6a08afdd14ba3b0d272a30a072" />
+    <None Include="Library\metadata\2e\2e2c7a6a08afdd14ba3b0d272a30a072.info" />
+    <None Include="Library\metadata\2f\2f1849b9179b464381598f68663790d3" />
+    <None Include="Library\metadata\2f\2f1849b9179b464381598f68663790d3.info" />
+    <None Include="Library\metadata\2f\2f1d33abb004b44cb90ec83a2bfe872e" />
+    <None Include="Library\metadata\2f\2f1d33abb004b44cb90ec83a2bfe872e.info" />
+    <None Include="Library\metadata\2f\2fd6421f253b4ef1a19526541f9ffc0c" />
+    <None Include="Library\metadata\2f\2fd6421f253b4ef1a19526541f9ffc0c.info" />
+    <None Include="Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5" />
+    <None Include="Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5.info" />
+    <None Include="Library\metadata\30\301fbaa0e62e44fd2a7383bd338a2898" />
+    <None Include="Library\metadata\30\301fbaa0e62e44fd2a7383bd338a2898.info" />
+    <None Include="Library\metadata\30\3069a00b8c364df395994d7d379e0a99" />
+    <None Include="Library\metadata\30\3069a00b8c364df395994d7d379e0a99.info" />
+    <None Include="Library\metadata\30\30a939dce2fd4073955f2f20e659d506" />
+    <None Include="Library\metadata\30\30a939dce2fd4073955f2f20e659d506.info" />
+    <None Include="Library\metadata\30\30aa3194afbe44a72aa7ec76cb2bab8a" />
+    <None Include="Library\metadata\30\30aa3194afbe44a72aa7ec76cb2bab8a.info" />
+    <None Include="Library\metadata\30\30bed781e402439ab8ce4e3357708115" />
+    <None Include="Library\metadata\30\30bed781e402439ab8ce4e3357708115.info" />
+    <None Include="Library\metadata\31\31fee2d543c43d946a30cf7b1cd1c545" />
+    <None Include="Library\metadata\31\31fee2d543c43d946a30cf7b1cd1c545.info" />
+    <None Include="Library\metadata\32\3207bc04f15f5f54e95f199ce7b7ddd1" />
+    <None Include="Library\metadata\32\3207bc04f15f5f54e95f199ce7b7ddd1.info" />
+    <None Include="Library\metadata\32\32188fd89022c154c81befa2f0e00be0" />
+    <None Include="Library\metadata\32\32188fd89022c154c81befa2f0e00be0.info" />
+    <None Include="Library\metadata\32\322392995be44d23a3c86cfd972f838f" />
+    <None Include="Library\metadata\32\322392995be44d23a3c86cfd972f838f.info" />
+    <None Include="Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9" />
+    <None Include="Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9.info" />
+    <None Include="Library\metadata\32\32d40088a6124c578ad6b428df586e2e" />
+    <None Include="Library\metadata\32\32d40088a6124c578ad6b428df586e2e.info" />
+    <None Include="Library\metadata\33\3339607d3aaa4528bc9ba6ad198ca8f3" />
+    <None Include="Library\metadata\33\3339607d3aaa4528bc9ba6ad198ca8f3.info" />
+    <None Include="Library\metadata\33\3385f7527e5be4c65b3a5294e8995ff8" />
+    <None Include="Library\metadata\33\3385f7527e5be4c65b3a5294e8995ff8.info" />
+    <None Include="Library\metadata\34\342a0f8aca7f4f0691338912faec0494" />
+    <None Include="Library\metadata\34\342a0f8aca7f4f0691338912faec0494.info" />
+    <None Include="Library\metadata\34\344e30043c0ce48e6b561f4a02ebaad9" />
+    <None Include="Library\metadata\34\344e30043c0ce48e6b561f4a02ebaad9.info" />
+    <None Include="Library\metadata\34\34e150112c1c42ac83170b52d898e322" />
+    <None Include="Library\metadata\34\34e150112c1c42ac83170b52d898e322.info" />
+    <None Include="Library\metadata\34\34e2c9b9d9e44953933afe37461f44e6" />
+    <None Include="Library\metadata\34\34e2c9b9d9e44953933afe37461f44e6.info" />
+    <None Include="Library\metadata\34\34f6695d37a94370a3697f6b068f5d5e" />
+    <None Include="Library\metadata\34\34f6695d37a94370a3697f6b068f5d5e.info" />
+    <None Include="Library\metadata\35\356ddaa51069e234297af4dec0f68d66" />
+    <None Include="Library\metadata\35\356ddaa51069e234297af4dec0f68d66.info" />
+    <None Include="Library\metadata\35\357e279af41c9784587a0f9d9a278dd6" />
+    <None Include="Library\metadata\35\357e279af41c9784587a0f9d9a278dd6.info" />
+    <None Include="Library\metadata\35\35a37e5573a005947bd21c5797050439" />
+    <None Include="Library\metadata\35\35a37e5573a005947bd21c5797050439.info" />
+    <None Include="Library\metadata\35\35b4e72ca46f44581b85082c4dc21d13" />
+    <None Include="Library\metadata\35\35b4e72ca46f44581b85082c4dc21d13.info" />
+    <None Include="Library\metadata\35\35ff0937876540d3bd4b6a941df62a92" />
+    <None Include="Library\metadata\35\35ff0937876540d3bd4b6a941df62a92.info" />
+    <None Include="Library\metadata\36\36372b562b7939d418b25375d37f9487" />
+    <None Include="Library\metadata\36\36372b562b7939d418b25375d37f9487.info" />
+    <None Include="Library\metadata\36\36e8bb3feb5e6402185947b817a6ed8d" />
+    <None Include="Library\metadata\36\36e8bb3feb5e6402185947b817a6ed8d.info" />
+    <None Include="Library\metadata\37\376c84ea405e0f2b80562c23bb977216" />
+    <None Include="Library\metadata\37\376c84ea405e0f2b80562c23bb977216.info" />
+    <None Include="Library\metadata\38\383966e89d344865a36addd5d378ffd3" />
+    <None Include="Library\metadata\38\383966e89d344865a36addd5d378ffd3.info" />
+    <None Include="Library\metadata\38\3877b2be7ee07495d8918dc8937e6de2" />
+    <None Include="Library\metadata\38\3877b2be7ee07495d8918dc8937e6de2.info" />
+    <None Include="Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc" />
+    <None Include="Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc.info" />
+    <None Include="Library\metadata\38\38e3a8976f0b9c586b6dfbcef4e4066c" />
+    <None Include="Library\metadata\38\38e3a8976f0b9c586b6dfbcef4e4066c.info" />
+    <None Include="Library\metadata\39\3921ed8918bada643a55483a49b9843a" />
+    <None Include="Library\metadata\39\3921ed8918bada643a55483a49b9843a.info" />
+    <None Include="Library\metadata\39\3955f306692091e40a7120f9c6ef104c" />
+    <None Include="Library\metadata\39\3955f306692091e40a7120f9c6ef104c.info" />
+    <None Include="Library\metadata\39\39728903e57c60021f80449a8bbc0096" />
+    <None Include="Library\metadata\39\39728903e57c60021f80449a8bbc0096.info" />
+    <None Include="Library\metadata\3a\3a2bf0128e2dd664f91dfba49e36a012" />
+    <None Include="Library\metadata\3a\3a2bf0128e2dd664f91dfba49e36a012.info" />
+    <None Include="Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a" />
+    <None Include="Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a.info" />
+    <None Include="Library\metadata\3a\3abc8faab9f5cbe4db0336c99fef85ca" />
+    <None Include="Library\metadata\3a\3abc8faab9f5cbe4db0336c99fef85ca.info" />
+    <None Include="Library\metadata\3b\3b07d432cba2a4c4f8a2fdea984620b8" />
+    <None Include="Library\metadata\3b\3b07d432cba2a4c4f8a2fdea984620b8.info" />
+    <None Include="Library\metadata\3b\3bb0254b9671413d9d08a855c5090237" />
+    <None Include="Library\metadata\3b\3bb0254b9671413d9d08a855c5090237.info" />
+    <None Include="Library\metadata\3b\3bda1886f58f4e0ab1139400b160c3ee" />
+    <None Include="Library\metadata\3b\3bda1886f58f4e0ab1139400b160c3ee.info" />
+    <None Include="Library\metadata\3c\3c61c79a991f84470843243e9710743e" />
+    <None Include="Library\metadata\3c\3c61c79a991f84470843243e9710743e.info" />
+    <None Include="Library\metadata\3c\3cbe74c18d295417f901410ce5e199eb" />
+    <None Include="Library\metadata\3c\3cbe74c18d295417f901410ce5e199eb.info" />
+    <None Include="Library\metadata\3c\3cebe1a96232b44388b30b2f72dde434" />
+    <None Include="Library\metadata\3c\3cebe1a96232b44388b30b2f72dde434.info" />
+    <None Include="Library\metadata\3c\3cf132d4fa07f4f0cb2883499c5c7dd0" />
+    <None Include="Library\metadata\3c\3cf132d4fa07f4f0cb2883499c5c7dd0.info" />
+    <None Include="Library\metadata\3d\3d4dd7445928b7945aa9817a8b65d6e1" />
+    <None Include="Library\metadata\3d\3d4dd7445928b7945aa9817a8b65d6e1.info" />
+    <None Include="Library\metadata\3d\3dcbbc060dea46168ffc09a580836240" />
+    <None Include="Library\metadata\3d\3dcbbc060dea46168ffc09a580836240.info" />
+    <None Include="Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0" />
+    <None Include="Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0.info" />
+    <None Include="Library\metadata\3e\3ee40aa79cd242a5b53b0b0ca4f13f0f" />
+    <None Include="Library\metadata\3e\3ee40aa79cd242a5b53b0b0ca4f13f0f.info" />
+    <None Include="Library\metadata\3f\3f0c4389c854bcaf848af1ea310dbada" />
+    <None Include="Library\metadata\3f\3f0c4389c854bcaf848af1ea310dbada.info" />
+    <None Include="Library\metadata\3f\3f3e22b18940a4e828a5170574a3617e" />
+    <None Include="Library\metadata\3f\3f3e22b18940a4e828a5170574a3617e.info" />
+    <None Include="Library\metadata\3f\3fd687846ba784d4583c294a60363afa" />
+    <None Include="Library\metadata\3f\3fd687846ba784d4583c294a60363afa.info" />
+    <None Include="Library\metadata\3f\3fdd83b151eb8d25c5e2f82fc39dcb04" />
+    <None Include="Library\metadata\3f\3fdd83b151eb8d25c5e2f82fc39dcb04.info" />
+    <None Include="Library\metadata\40\4008a9a89683e664d8fe661233721fbf" />
+    <None Include="Library\metadata\40\4008a9a89683e664d8fe661233721fbf.info" />
+    <None Include="Library\metadata\40\405b9b51bb344a128608d968297df79c" />
+    <None Include="Library\metadata\40\405b9b51bb344a128608d968297df79c.info" />
+    <None Include="Library\metadata\40\40bf3cec17fa0b49fe04443c8332d638" />
+    <None Include="Library\metadata\40\40bf3cec17fa0b49fe04443c8332d638.info" />
+    <None Include="Library\metadata\41\4113173d5e95493ab8765d7b08371de4" />
+    <None Include="Library\metadata\41\4113173d5e95493ab8765d7b08371de4.info" />
+    <None Include="Library\metadata\41\41b96614b2e6494ba995ddcd252d11ae" />
+    <None Include="Library\metadata\41\41b96614b2e6494ba995ddcd252d11ae.info" />
+    <None Include="Library\metadata\42\42064bc130be4c44b288d249a44b356f" />
+    <None Include="Library\metadata\42\42064bc130be4c44b288d249a44b356f.info" />
+    <None Include="Library\metadata\42\42943e63b121a544ba36a133db9742cb" />
+    <None Include="Library\metadata\42\42943e63b121a544ba36a133db9742cb.info" />
+    <None Include="Library\metadata\42\42fe78c8fe682715a2cb531422e6ccb3" />
+    <None Include="Library\metadata\42\42fe78c8fe682715a2cb531422e6ccb3.info" />
+    <None Include="Library\metadata\43\438efd46088d408d8a53f707fa68d976" />
+    <None Include="Library\metadata\43\438efd46088d408d8a53f707fa68d976.info" />
+    <None Include="Library\metadata\44\44e1d646473a40178712cb2150f54cec" />
+    <None Include="Library\metadata\44\44e1d646473a40178712cb2150f54cec.info" />
+    <None Include="Library\metadata\44\44f39a74ca5ee4bf5936b17e901f251c" />
+    <None Include="Library\metadata\44\44f39a74ca5ee4bf5936b17e901f251c.info" />
+    <None Include="Library\metadata\45\453f100e6bdae4dfd9e655927819dc85" />
+    <None Include="Library\metadata\45\453f100e6bdae4dfd9e655927819dc85.info" />
+    <None Include="Library\metadata\46\460636d894925441ba1debe037d2e343" />
+    <None Include="Library\metadata\46\460636d894925441ba1debe037d2e343.info" />
+    <None Include="Library\metadata\46\46098a81a64a45c5b756320e10a22f13" />
+    <None Include="Library\metadata\46\46098a81a64a45c5b756320e10a22f13.info" />
+    <None Include="Library\metadata\46\46c02d8d6499b4309ac1ec5d0b818585" />
+    <None Include="Library\metadata\46\46c02d8d6499b4309ac1ec5d0b818585.info" />
+    <None Include="Library\metadata\47\47df14ce4e3c6419ab2ff3080ef897b6" />
+    <None Include="Library\metadata\47\47df14ce4e3c6419ab2ff3080ef897b6.info" />
+    <None Include="Library\metadata\48\48986928cc2a449dbaecdd1654bc9bf6" />
+    <None Include="Library\metadata\48\48986928cc2a449dbaecdd1654bc9bf6.info" />
+    <None Include="Library\metadata\48\48b10b41f58d5b49717f376cda59eeb8" />
+    <None Include="Library\metadata\48\48b10b41f58d5b49717f376cda59eeb8.info" />
+    <None Include="Library\metadata\48\48d034c499ee4697af9dd6e327110249" />
+    <None Include="Library\metadata\48\48d034c499ee4697af9dd6e327110249.info" />
+    <None Include="Library\metadata\49\490fe93dbc954e3ba3651b7f55eaba70" />
+    <None Include="Library\metadata\49\490fe93dbc954e3ba3651b7f55eaba70.info" />
+    <None Include="Library\metadata\49\49463c5d22bc0bf4fb122d1a88fc4226" />
+    <None Include="Library\metadata\49\49463c5d22bc0bf4fb122d1a88fc4226.info" />
+    <None Include="Library\metadata\49\49679f302ac6408697f6b9314a38985c" />
+    <None Include="Library\metadata\49\49679f302ac6408697f6b9314a38985c.info" />
+    <None Include="Library\metadata\49\49a6bf319ce1b5042b4540b242e6e89c" />
+    <None Include="Library\metadata\49\49a6bf319ce1b5042b4540b242e6e89c.info" />
+    <None Include="Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677" />
+    <None Include="Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677.info" />
+    <None Include="Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70" />
+    <None Include="Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70.info" />
+    <None Include="Library\metadata\4a\4a813084baf34314aa7b09881c317646" />
+    <None Include="Library\metadata\4a\4a813084baf34314aa7b09881c317646.info" />
+    <None Include="Library\metadata\4a\4ae64f3f72004807a9f919f9c27af0db" />
+    <None Include="Library\metadata\4a\4ae64f3f72004807a9f919f9c27af0db.info" />
+    <None Include="Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8" />
+    <None Include="Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8.info" />
+    <None Include="Library\metadata\4b\4b518b37798c97b0f860962cbf615533" />
+    <None Include="Library\metadata\4b\4b518b37798c97b0f860962cbf615533.info" />
+    <None Include="Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f" />
+    <None Include="Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f.info" />
+    <None Include="Library\metadata\4c\4c66545aacbe8438cb112f023a224de6" />
+    <None Include="Library\metadata\4c\4c66545aacbe8438cb112f023a224de6.info" />
+    <None Include="Library\metadata\4c\4c6fe94acbb24417c988bab18cbd5209" />
+    <None Include="Library\metadata\4c\4c6fe94acbb24417c988bab18cbd5209.info" />
+    <None Include="Library\metadata\4d\4d64205430999a04981dab6f259b6e44" />
+    <None Include="Library\metadata\4d\4d64205430999a04981dab6f259b6e44.info" />
+    <None Include="Library\metadata\4d\4dfd3f5da88944ec6ac5977d676c30c6" />
+    <None Include="Library\metadata\4d\4dfd3f5da88944ec6ac5977d676c30c6.info" />
+    <None Include="Library\metadata\4e\4e1503a584d597b40bbe5616b6c5d22b" />
+    <None Include="Library\metadata\4e\4e1503a584d597b40bbe5616b6c5d22b.info" />
+    <None Include="Library\metadata\4e\4e830e2dbc3315b4b97cd5311a54e4fe" />
+    <None Include="Library\metadata\4e\4e830e2dbc3315b4b97cd5311a54e4fe.info" />
+    <None Include="Library\metadata\4f\4f0ca6874aa74540bb3d4fe5a0f86bcc" />
+    <None Include="Library\metadata\4f\4f0ca6874aa74540bb3d4fe5a0f86bcc.info" />
+    <None Include="Library\metadata\4f\4f0f9b9f3ed97ad2b9ba8f1a8e4666c2" />
+    <None Include="Library\metadata\4f\4f0f9b9f3ed97ad2b9ba8f1a8e4666c2.info" />
+    <None Include="Library\metadata\4f\4f234578336894dc081edf696f2ff5f2" />
+    <None Include="Library\metadata\4f\4f234578336894dc081edf696f2ff5f2.info" />
+    <None Include="Library\metadata\4f\4f704ae4b4f98ae41a0bce26658850c1" />
+    <None Include="Library\metadata\4f\4f704ae4b4f98ae41a0bce26658850c1.info" />
+    <None Include="Library\metadata\4f\4f768b64e6c37495699fffe3007e4379" />
+    <None Include="Library\metadata\4f\4f768b64e6c37495699fffe3007e4379.info" />
+    <None Include="Library\metadata\4f\4fc12201ddc4b4d45b9bdecdf7f00ea5" />
+    <None Include="Library\metadata\4f\4fc12201ddc4b4d45b9bdecdf7f00ea5.info" />
+    <None Include="Library\metadata\50\5075cb5aa3254b099b11b2840d7cd46e" />
+    <None Include="Library\metadata\50\5075cb5aa3254b099b11b2840d7cd46e.info" />
+    <None Include="Library\metadata\51\510d1d319d2754ea4a47c6dd8c421ea0" />
+    <None Include="Library\metadata\51\510d1d319d2754ea4a47c6dd8c421ea0.info" />
+    <None Include="Library\metadata\51\5143f58107604835ab1a5efa2d8818fd" />
+    <None Include="Library\metadata\51\5143f58107604835ab1a5efa2d8818fd.info" />
+    <None Include="Library\metadata\51\515638b803bef8599dbd6d5c8bdaa53e" />
+    <None Include="Library\metadata\51\515638b803bef8599dbd6d5c8bdaa53e.info" />
+    <None Include="Library\metadata\51\517af1b5b81b93b43b9745d58f017562" />
+    <None Include="Library\metadata\51\517af1b5b81b93b43b9745d58f017562.info" />
+    <None Include="Library\metadata\53\5347e52e38be748d4b70d2961383b5df" />
+    <None Include="Library\metadata\53\5347e52e38be748d4b70d2961383b5df.info" />
+    <None Include="Library\metadata\53\536c0048c80e8407084e29942e15685b" />
+    <None Include="Library\metadata\53\536c0048c80e8407084e29942e15685b.info" />
+    <None Include="Library\metadata\53\5397028c55f1d7e4aa70b817f54d883f" />
+    <None Include="Library\metadata\53\5397028c55f1d7e4aa70b817f54d883f.info" />
+    <None Include="Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1" />
+    <None Include="Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1.info" />
+    <None Include="Library\metadata\53\53f007aefbfed4543bf74cc2a55b255e" />
+    <None Include="Library\metadata\53\53f007aefbfed4543bf74cc2a55b255e.info" />
+    <None Include="Library\metadata\54\5469ef0820152a4ae45d400fdc4626e4" />
+    <None Include="Library\metadata\54\5469ef0820152a4ae45d400fdc4626e4.info" />
+    <None Include="Library\metadata\54\54d21f6ece3b46479f0c328f8c6007e0" />
+    <None Include="Library\metadata\54\54d21f6ece3b46479f0c328f8c6007e0.info" />
+    <None Include="Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5" />
+    <None Include="Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5.info" />
+    <None Include="Library\metadata\55\55df43ae0f8abc14aa789c3c96b45f40" />
+    <None Include="Library\metadata\55\55df43ae0f8abc14aa789c3c96b45f40.info" />
+    <None Include="Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc" />
+    <None Include="Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc.info" />
+    <None Include="Library\metadata\58\585b70cb75dd43efbfead809c30a1731" />
+    <None Include="Library\metadata\58\585b70cb75dd43efbfead809c30a1731.info" />
+    <None Include="Library\metadata\59\592f7288ed0df2c4b884e2cd9baac023" />
+    <None Include="Library\metadata\59\592f7288ed0df2c4b884e2cd9baac023.info" />
+    <None Include="Library\metadata\59\5941c79cb78c34a0d9c677ece9784f15" />
+    <None Include="Library\metadata\59\5941c79cb78c34a0d9c677ece9784f15.info" />
+    <None Include="Library\metadata\5a\5afb9687033af4bca957216add3fe854" />
+    <None Include="Library\metadata\5a\5afb9687033af4bca957216add3fe854.info" />
+    <None Include="Library\metadata\5b\5bcf9c66fa70ea84bbbb43025deef1fa" />
+    <None Include="Library\metadata\5b\5bcf9c66fa70ea84bbbb43025deef1fa.info" />
+    <None Include="Library\metadata\5c\5c02a695cfd40014e9c28cad50096f8b" />
+    <None Include="Library\metadata\5c\5c02a695cfd40014e9c28cad50096f8b.info" />
+    <None Include="Library\metadata\5c\5c38c5679d98faa4ae7df9fae0a8226e" />
+    <None Include="Library\metadata\5c\5c38c5679d98faa4ae7df9fae0a8226e.info" />
+    <None Include="Library\metadata\5c\5c4f28f6254cd4e9fb5b1d7b51cb348c" />
+    <None Include="Library\metadata\5c\5c4f28f6254cd4e9fb5b1d7b51cb348c.info" />
+    <None Include="Library\metadata\5e\5e268ed29fcfb724f8f9b8bbc3cde718" />
+    <None Include="Library\metadata\5e\5e268ed29fcfb724f8f9b8bbc3cde718.info" />
+    <None Include="Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07" />
+    <None Include="Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07.info" />
+    <None Include="Library\metadata\5e\5e57a6c62c1ec47d0bceb70495845164" />
+    <None Include="Library\metadata\5e\5e57a6c62c1ec47d0bceb70495845164.info" />
+    <None Include="Library\metadata\5e\5e7c9ab97e5884e4eaa5967e9024f39d" />
+    <None Include="Library\metadata\5e\5e7c9ab97e5884e4eaa5967e9024f39d.info" />
+    <None Include="Library\metadata\5e\5ec95f4d5b2d1f14e9ff8682562553f9" />
+    <None Include="Library\metadata\5e\5ec95f4d5b2d1f14e9ff8682562553f9.info" />
+    <None Include="Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7" />
+    <None Include="Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7.info" />
+    <None Include="Library\metadata\5f\5fc988a1d5b04aee9a5222502b201a45" />
+    <None Include="Library\metadata\5f\5fc988a1d5b04aee9a5222502b201a45.info" />
+    <None Include="Library\metadata\60\603dc9d75eece07499ed06414b0fb796" />
+    <None Include="Library\metadata\60\603dc9d75eece07499ed06414b0fb796.info" />
+    <None Include="Library\metadata\60\6055be8ebefd69e48b49212b09b47b2f" />
+    <None Include="Library\metadata\60\6055be8ebefd69e48b49212b09b47b2f.info" />
+    <None Include="Library\metadata\61\610c1ab8e176e4a489ec7c0e0c4a7323" />
+    <None Include="Library\metadata\61\610c1ab8e176e4a489ec7c0e0c4a7323.info" />
+    <None Include="Library\metadata\61\61d72cb49da3040d5ade3edfd6eccfc1" />
+    <None Include="Library\metadata\61\61d72cb49da3040d5ade3edfd6eccfc1.info" />
+    <None Include="Library\metadata\62\62772aad98ed04f0d955b7d20de61f7f" />
+    <None Include="Library\metadata\62\62772aad98ed04f0d955b7d20de61f7f.info" />
+    <None Include="Library\metadata\62\6277a751c6c9f46359fc7004b3ee12f0" />
+    <None Include="Library\metadata\62\6277a751c6c9f46359fc7004b3ee12f0.info" />
+    <None Include="Library\metadata\62\62a7573e463b4f68b578fcba3a94110c" />
+    <None Include="Library\metadata\62\62a7573e463b4f68b578fcba3a94110c.info" />
+    <None Include="Library\metadata\63\63031ac4293944719946e077c75b255a" />
+    <None Include="Library\metadata\63\63031ac4293944719946e077c75b255a.info" />
+    <None Include="Library\metadata\63\6366ee97f6b541449155028b9487355a" />
+    <None Include="Library\metadata\63\6366ee97f6b541449155028b9487355a.info" />
+    <None Include="Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb" />
+    <None Include="Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb.info" />
+    <None Include="Library\metadata\64\64b9fad609434c489c32b1cdf2004a1c" />
+    <None Include="Library\metadata\64\64b9fad609434c489c32b1cdf2004a1c.info" />
+    <None Include="Library\metadata\64\64ed1d3d1c12b54449cd6ccb6b352869" />
+    <None Include="Library\metadata\64\64ed1d3d1c12b54449cd6ccb6b352869.info" />
+    <None Include="Library\metadata\65\650078f489a31104f82c0c1c5c91a872" />
+    <None Include="Library\metadata\65\650078f489a31104f82c0c1c5c91a872.info" />
+    <None Include="Library\metadata\65\650ea1d167b834d0f86d94e1e8c3b80f" />
+    <None Include="Library\metadata\65\650ea1d167b834d0f86d94e1e8c3b80f.info" />
+    <None Include="Library\metadata\65\6546d7765b4165b40850b3667f981c26" />
+    <None Include="Library\metadata\65\6546d7765b4165b40850b3667f981c26.info" />
+    <None Include="Library\metadata\65\656e461844099ae43a609ff6109b0877" />
+    <None Include="Library\metadata\65\656e461844099ae43a609ff6109b0877.info" />
+    <None Include="Library\metadata\65\657ed0a67f5c5244eb8f87aa12f06580" />
+    <None Include="Library\metadata\65\657ed0a67f5c5244eb8f87aa12f06580.info" />
+    <None Include="Library\metadata\65\658c1fb149e7498aa072b0c0f3bf13f0" />
+    <None Include="Library\metadata\65\658c1fb149e7498aa072b0c0f3bf13f0.info" />
+    <None Include="Library\metadata\65\6597c6ea86d36477081342001145d8d9" />
+    <None Include="Library\metadata\65\6597c6ea86d36477081342001145d8d9.info" />
+    <None Include="Library\metadata\65\65d58d50c3db54f979b1ffae3777d74b" />
+    <None Include="Library\metadata\65\65d58d50c3db54f979b1ffae3777d74b.info" />
+    <None Include="Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88" />
+    <None Include="Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88.info" />
+    <None Include="Library\metadata\66\66281976896b84291a7c933800665eee" />
+    <None Include="Library\metadata\66\66281976896b84291a7c933800665eee.info" />
+    <None Include="Library\metadata\66\669717f3193a457b9bad9665ebcae836" />
+    <None Include="Library\metadata\66\669717f3193a457b9bad9665ebcae836.info" />
+    <None Include="Library\metadata\68\68eedd4e5b33b37429c02c4add0036fe" />
+    <None Include="Library\metadata\68\68eedd4e5b33b37429c02c4add0036fe.info" />
+    <None Include="Library\metadata\69\691475c57a824010be0c6f474caeb7e1" />
+    <None Include="Library\metadata\69\691475c57a824010be0c6f474caeb7e1.info" />
+    <None Include="Library\metadata\69\691db8cb70c4426a8ae718465c21345f" />
+    <None Include="Library\metadata\69\691db8cb70c4426a8ae718465c21345f.info" />
+    <None Include="Library\metadata\69\6981461fe431401459211818212a29cf" />
+    <None Include="Library\metadata\69\6981461fe431401459211818212a29cf.info" />
+    <None Include="Library\metadata\69\69f78ddba7f3142308e5b0998c570ca8" />
+    <None Include="Library\metadata\69\69f78ddba7f3142308e5b0998c570ca8.info" />
+    <None Include="Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5" />
+    <None Include="Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5.info" />
+    <None Include="Library\metadata\6a\6a2705af0cf7a418a94cfada8caccae7" />
+    <None Include="Library\metadata\6a\6a2705af0cf7a418a94cfada8caccae7.info" />
+    <None Include="Library\metadata\6a\6ace62d30f494c948b71d5594afce11d" />
+    <None Include="Library\metadata\6a\6ace62d30f494c948b71d5594afce11d.info" />
+    <None Include="Library\metadata\6a\6afb166a156df2d20433d981f4bb2832" />
+    <None Include="Library\metadata\6a\6afb166a156df2d20433d981f4bb2832.info" />
+    <None Include="Library\metadata\6b\6b01141ed8f74d198965c86f25eb7040" />
+    <None Include="Library\metadata\6b\6b01141ed8f74d198965c86f25eb7040.info" />
+    <None Include="Library\metadata\6c\6c5902ec21a0dd84e8bc54dc6c3986bc" />
+    <None Include="Library\metadata\6c\6c5902ec21a0dd84e8bc54dc6c3986bc.info" />
+    <None Include="Library\metadata\6d\6d437b997e074079b4b2f6e395394f4b" />
+    <None Include="Library\metadata\6d\6d437b997e074079b4b2f6e395394f4b.info" />
+    <None Include="Library\metadata\6d\6d56244f8c39a851975d3c0bd432c66f" />
+    <None Include="Library\metadata\6d\6d56244f8c39a851975d3c0bd432c66f.info" />
+    <None Include="Library\metadata\6d\6d6f82a762acb4417b895d3babc790f9" />
+    <None Include="Library\metadata\6d\6d6f82a762acb4417b895d3babc790f9.info" />
+    <None Include="Library\metadata\6d\6d90ff97db30c4f4392605b14fe74a42" />
+    <None Include="Library\metadata\6d\6d90ff97db30c4f4392605b14fe74a42.info" />
+    <None Include="Library\metadata\6d\6d9df2bc198c417db00037803568139c" />
+    <None Include="Library\metadata\6d\6d9df2bc198c417db00037803568139c.info" />
+    <None Include="Library\metadata\6d\6dbcf248c987476181a37f01a1814975" />
+    <None Include="Library\metadata\6d\6dbcf248c987476181a37f01a1814975.info" />
+    <None Include="Library\metadata\6e\6e1c8b97ec8aa0464e92506ffe099558" />
+    <None Include="Library\metadata\6e\6e1c8b97ec8aa0464e92506ffe099558.info" />
+    <None Include="Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442" />
+    <None Include="Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442.info" />
+    <None Include="Library\metadata\6e\6e6d8ae429164ac40a2e1eac68fbbbf0" />
+    <None Include="Library\metadata\6e\6e6d8ae429164ac40a2e1eac68fbbbf0.info" />
+    <None Include="Library\metadata\6e\6e7c8cfeedae74eb3a562055e069e441" />
+    <None Include="Library\metadata\6e\6e7c8cfeedae74eb3a562055e069e441.info" />
+    <None Include="Library\metadata\6f\6f1c7ebc8ac78cb951be24c238cbd3ba" />
+    <None Include="Library\metadata\6f\6f1c7ebc8ac78cb951be24c238cbd3ba.info" />
+    <None Include="Library\metadata\6f\6fdea2af3daa40fe8f88e5e9cfc17abb" />
+    <None Include="Library\metadata\6f\6fdea2af3daa40fe8f88e5e9cfc17abb.info" />
+    <None Include="Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9" />
+    <None Include="Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9.info" />
+    <None Include="Library\metadata\70\7035ee78efa3327409786030a8aeba2e" />
+    <None Include="Library\metadata\70\7035ee78efa3327409786030a8aeba2e.info" />
+    <None Include="Library\metadata\70\7065397ff8184621aa3ca4f854491259" />
+    <None Include="Library\metadata\70\7065397ff8184621aa3ca4f854491259.info" />
+    <None Include="Library\metadata\70\70d1d5c811718704bbacfacf1f9bdb09" />
+    <None Include="Library\metadata\70\70d1d5c811718704bbacfacf1f9bdb09.info" />
+    <None Include="Library\metadata\71\71c1514a6bd24e1e882cebbe1904ce04" />
+    <None Include="Library\metadata\71\71c1514a6bd24e1e882cebbe1904ce04.info" />
+    <None Include="Library\metadata\72\7241c7dc25374fc1a6ab3ef9da79c363" />
+    <None Include="Library\metadata\72\7241c7dc25374fc1a6ab3ef9da79c363.info" />
+    <None Include="Library\metadata\72\7297b8457e20be0459c81408cc3cfc39" />
+    <None Include="Library\metadata\72\7297b8457e20be0459c81408cc3cfc39.info" />
+    <None Include="Library\metadata\72\72a912a47edea497ba0c5937ae39163d" />
+    <None Include="Library\metadata\72\72a912a47edea497ba0c5937ae39163d.info" />
+    <None Include="Library\metadata\73\7385bea84547407c9a5a8a714ac49b38" />
+    <None Include="Library\metadata\73\7385bea84547407c9a5a8a714ac49b38.info" />
+    <None Include="Library\metadata\74\74101c7619674b24d82777e7458e0977" />
+    <None Include="Library\metadata\74\74101c7619674b24d82777e7458e0977.info" />
+    <None Include="Library\metadata\75\75753434c95764740b04cfe380d13150" />
+    <None Include="Library\metadata\75\75753434c95764740b04cfe380d13150.info" />
+    <None Include="Library\metadata\75\75799de484ac4f4cadc268d2cbea830a" />
+    <None Include="Library\metadata\75\75799de484ac4f4cadc268d2cbea830a.info" />
+    <None Include="Library\metadata\75\75938f72739584ed9925bf4ae8989079" />
+    <None Include="Library\metadata\75\75938f72739584ed9925bf4ae8989079.info" />
+    <None Include="Library\metadata\76\76078ddafb924ce19edc6034201cb15b" />
+    <None Include="Library\metadata\76\76078ddafb924ce19edc6034201cb15b.info" />
+    <None Include="Library\metadata\76\760934a36e5f490db3c9fcaf497625a4" />
+    <None Include="Library\metadata\76\760934a36e5f490db3c9fcaf497625a4.info" />
+    <None Include="Library\metadata\76\76349cec627454d3a80423a2eeaf0e63" />
+    <None Include="Library\metadata\76\76349cec627454d3a80423a2eeaf0e63.info" />
+    <None Include="Library\metadata\76\7668179ede524d6396c8b7d84461ea29" />
+    <None Include="Library\metadata\76\7668179ede524d6396c8b7d84461ea29.info" />
+    <None Include="Library\metadata\77\77266cd0cb87047598c012933eed3d57" />
+    <None Include="Library\metadata\77\77266cd0cb87047598c012933eed3d57.info" />
+    <None Include="Library\metadata\77\77476292f9fa4905a787e6417853846b" />
+    <None Include="Library\metadata\77\77476292f9fa4905a787e6417853846b.info" />
+    <None Include="Library\metadata\77\77a4dfe752cffa84eb33960d8804effe" />
+    <None Include="Library\metadata\77\77a4dfe752cffa84eb33960d8804effe.info" />
+    <None Include="Library\metadata\78\78b9ad527fe44d7cb05bbb77fbf351c0" />
+    <None Include="Library\metadata\78\78b9ad527fe44d7cb05bbb77fbf351c0.info" />
+    <None Include="Library\metadata\78\78e267bad6d564d49803ba3e9c13ff2e" />
+    <None Include="Library\metadata\78\78e267bad6d564d49803ba3e9c13ff2e.info" />
+    <None Include="Library\metadata\79\7927683d1fc5848b5abfb54ebb1028ec" />
+    <None Include="Library\metadata\79\7927683d1fc5848b5abfb54ebb1028ec.info" />
+    <None Include="Library\metadata\79\797cf0c5f1b7e4e1ab17481bd9b698eb" />
+    <None Include="Library\metadata\79\797cf0c5f1b7e4e1ab17481bd9b698eb.info" />
+    <None Include="Library\metadata\79\79ff392d1bde4ad78a3836a4a480392d" />
+    <None Include="Library\metadata\79\79ff392d1bde4ad78a3836a4a480392d.info" />
+    <None Include="Library\metadata\7a\7a1c7a3fd712e7f48a73343ba2b111ab" />
+    <None Include="Library\metadata\7a\7a1c7a3fd712e7f48a73343ba2b111ab.info" />
+    <None Include="Library\metadata\7a\7a74094b34f74992a5121c0586ccf6ea" />
+    <None Include="Library\metadata\7a\7a74094b34f74992a5121c0586ccf6ea.info" />
+    <None Include="Library\metadata\7b\7b471e48ad0853146b8dbd0eae640fc5" />
+    <None Include="Library\metadata\7b\7b471e48ad0853146b8dbd0eae640fc5.info" />
+    <None Include="Library\metadata\7b\7b743370ac3e4ec2a1668f5455a8ef8a" />
+    <None Include="Library\metadata\7b\7b743370ac3e4ec2a1668f5455a8ef8a.info" />
+    <None Include="Library\metadata\7b\7b87dac66d6e74d5f848d26f169bbe89" />
+    <None Include="Library\metadata\7b\7b87dac66d6e74d5f848d26f169bbe89.info" />
+    <None Include="Library\metadata\7b\7be50c6095eb1fc489b896d1acdef621" />
+    <None Include="Library\metadata\7b\7be50c6095eb1fc489b896d1acdef621.info" />
+    <None Include="Library\metadata\7c\7c20856617c24cf99a5212838cacc239" />
+    <None Include="Library\metadata\7c\7c20856617c24cf99a5212838cacc239.info" />
+    <None Include="Library\metadata\7c\7c3a5d6e39b874f468b2691537168513" />
+    <None Include="Library\metadata\7c\7c3a5d6e39b874f468b2691537168513.info" />
+    <None Include="Library\metadata\7c\7c8aa69027f74423f887bb1ca958844f" />
+    <None Include="Library\metadata\7c\7c8aa69027f74423f887bb1ca958844f.info" />
+    <None Include="Library\metadata\7c\7cd7f3c420f5f4dbe98f47ea77884c6d" />
+    <None Include="Library\metadata\7c\7cd7f3c420f5f4dbe98f47ea77884c6d.info" />
+    <None Include="Library\metadata\7d\7d22934bf84ccd14082fd2d5a9f5951e" />
+    <None Include="Library\metadata\7d\7d22934bf84ccd14082fd2d5a9f5951e.info" />
+    <None Include="Library\metadata\7d\7d80354ace7ca4959abbd7c7e4df83bb" />
+    <None Include="Library\metadata\7d\7d80354ace7ca4959abbd7c7e4df83bb.info" />
+    <None Include="Library\metadata\7d\7da0c11c52b4044de81c175887699282" />
+    <None Include="Library\metadata\7d\7da0c11c52b4044de81c175887699282.info" />
+    <None Include="Library\metadata\7e\7e59c7317e51470a833219e69cdeec75" />
+    <None Include="Library\metadata\7e\7e59c7317e51470a833219e69cdeec75.info" />
+    <None Include="Library\metadata\7e\7ed48dcc992234c659018e00590315b7" />
+    <None Include="Library\metadata\7e\7ed48dcc992234c659018e00590315b7.info" />
+    <None Include="Library\metadata\7e\7ef8348b8ea834d7e1bc214b07f7fb87" />
+    <None Include="Library\metadata\7e\7ef8348b8ea834d7e1bc214b07f7fb87.info" />
+    <None Include="Library\metadata\7f\7fd5e77e7e7ea4eea8198138cd9cc814" />
+    <None Include="Library\metadata\7f\7fd5e77e7e7ea4eea8198138cd9cc814.info" />
+    <None Include="Library\metadata\80\806de5a9211448c8b65c8435ebb48dd4" />
+    <None Include="Library\metadata\80\806de5a9211448c8b65c8435ebb48dd4.info" />
+    <None Include="Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f" />
+    <None Include="Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f.info" />
+    <None Include="Library\metadata\80\80beef77cb19e713c7c2d481b65ed485" />
+    <None Include="Library\metadata\80\80beef77cb19e713c7c2d481b65ed485.info" />
+    <None Include="Library\metadata\81\810def08e6eae48f7b5d8c192e48356b" />
+    <None Include="Library\metadata\81\810def08e6eae48f7b5d8c192e48356b.info" />
+    <None Include="Library\metadata\81\81ed8c76d2bc4a4c95d092c98af4e58f" />
+    <None Include="Library\metadata\81\81ed8c76d2bc4a4c95d092c98af4e58f.info" />
+    <None Include="Library\metadata\81\81f8cf4a1c4ad49e8a311dfc1998bd07" />
+    <None Include="Library\metadata\81\81f8cf4a1c4ad49e8a311dfc1998bd07.info" />
+    <None Include="Library\metadata\83\8311e0574a8bd42f78de3e17b70f43cf" />
+    <None Include="Library\metadata\83\8311e0574a8bd42f78de3e17b70f43cf.info" />
+    <None Include="Library\metadata\83\839964309c9e37e47ba98a4eee4f71c6" />
+    <None Include="Library\metadata\83\839964309c9e37e47ba98a4eee4f71c6.info" />
+    <None Include="Library\metadata\84\8413ca0e506d42a1a4bd9769f204ad16" />
+    <None Include="Library\metadata\84\8413ca0e506d42a1a4bd9769f204ad16.info" />
+    <None Include="Library\metadata\84\844f815391db42d49455cbf1a7bfc434" />
+    <None Include="Library\metadata\84\844f815391db42d49455cbf1a7bfc434.info" />
+    <None Include="Library\metadata\84\84904db52f74acb4da3b3dc1655c42fe" />
+    <None Include="Library\metadata\84\84904db52f74acb4da3b3dc1655c42fe.info" />
+    <None Include="Library\metadata\84\84a92b25f83d49b9bc132d206b370281" />
+    <None Include="Library\metadata\84\84a92b25f83d49b9bc132d206b370281.info" />
+    <None Include="Library\metadata\84\84aec3c9054b3402293139f2c0bc1029" />
+    <None Include="Library\metadata\84\84aec3c9054b3402293139f2c0bc1029.info" />
+    <None Include="Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390" />
+    <None Include="Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390.info" />
+    <None Include="Library\metadata\85\850c54ee0b9e1aa740b1c67792eb1f26" />
+    <None Include="Library\metadata\85\850c54ee0b9e1aa740b1c67792eb1f26.info" />
+    <None Include="Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2" />
+    <None Include="Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2.info" />
+    <None Include="Library\metadata\86\86a10d4ffec19684ea424dd5fb704e6a" />
+    <None Include="Library\metadata\86\86a10d4ffec19684ea424dd5fb704e6a.info" />
+    <None Include="Library\metadata\86\86ae85bd22866334c819cfd8be2a1d9e" />
+    <None Include="Library\metadata\86\86ae85bd22866334c819cfd8be2a1d9e.info" />
+    <None Include="Library\metadata\86\86c008322e7c647149878156c5b81940" />
+    <None Include="Library\metadata\86\86c008322e7c647149878156c5b81940.info" />
+    <None Include="Library\metadata\86\86c18994495874297b469aaa57ef9b44" />
+    <None Include="Library\metadata\86\86c18994495874297b469aaa57ef9b44.info" />
+    <None Include="Library\metadata\86\86d0242b70e6ab24aaf5a0e67edf2a61" />
+    <None Include="Library\metadata\86\86d0242b70e6ab24aaf5a0e67edf2a61.info" />
+    <None Include="Library\metadata\87\870178c22e3eaee42928a6f3c7f00264" />
+    <None Include="Library\metadata\87\870178c22e3eaee42928a6f3c7f00264.info" />
+    <None Include="Library\metadata\87\870353891bb340e2b2a9c8707e7419ba" />
+    <None Include="Library\metadata\87\870353891bb340e2b2a9c8707e7419ba.info" />
+    <None Include="Library\metadata\87\871f8edd56e84b8fb295b10cc3c78f36" />
+    <None Include="Library\metadata\87\871f8edd56e84b8fb295b10cc3c78f36.info" />
+    <None Include="Library\metadata\87\87738e82a4f047cc947cff8a2ccea594" />
+    <None Include="Library\metadata\87\87738e82a4f047cc947cff8a2ccea594.info" />
+    <None Include="Library\metadata\87\87ab1bebe13f41f89d5427e7d2c34d58" />
+    <None Include="Library\metadata\87\87ab1bebe13f41f89d5427e7d2c34d58.info" />
+    <None Include="Library\metadata\87\87d720faa37005c08600090e04d8c739" />
+    <None Include="Library\metadata\87\87d720faa37005c08600090e04d8c739.info" />
+    <None Include="Library\metadata\88\880f2fc52037c4fe09edb80cfe84ac7c" />
+    <None Include="Library\metadata\88\880f2fc52037c4fe09edb80cfe84ac7c.info" />
+    <None Include="Library\metadata\88\88156a74448828d45b7478fb7671132a" />
+    <None Include="Library\metadata\88\88156a74448828d45b7478fb7671132a.info" />
+    <None Include="Library\metadata\88\884f8f0e4025a420893d3a8d1d3063e1" />
+    <None Include="Library\metadata\88\884f8f0e4025a420893d3a8d1d3063e1.info" />
+    <None Include="Library\metadata\88\8889e895d9131e94daef72598e78c44c" />
+    <None Include="Library\metadata\88\8889e895d9131e94daef72598e78c44c.info" />
+    <None Include="Library\metadata\88\88ed537c17c34f339121fe9a7d6d7a0e" />
+    <None Include="Library\metadata\88\88ed537c17c34f339121fe9a7d6d7a0e.info" />
+    <None Include="Library\metadata\89\89ceeb31fc03c544ab8e2a515a31f139" />
+    <None Include="Library\metadata\89\89ceeb31fc03c544ab8e2a515a31f139.info" />
+    <None Include="Library\metadata\8b\8bc445bb79654bf496c92d0407840a92" />
+    <None Include="Library\metadata\8b\8bc445bb79654bf496c92d0407840a92.info" />
+    <None Include="Library\metadata\8b\8bf003bc0d3c1b14da7c0e9089d09e62" />
+    <None Include="Library\metadata\8b\8bf003bc0d3c1b14da7c0e9089d09e62.info" />
+    <None Include="Library\metadata\8c\8c25f8b5c9da143328c516248414b95d" />
+    <None Include="Library\metadata\8c\8c25f8b5c9da143328c516248414b95d.info" />
+    <None Include="Library\metadata\8d\8dc13e2402f87d542bd2a7b55332a6f7" />
+    <None Include="Library\metadata\8d\8dc13e2402f87d542bd2a7b55332a6f7.info" />
+    <None Include="Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe" />
+    <None Include="Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe.info" />
+    <None Include="Library\metadata\8f\8f8b248abe6b4dcebd6cdd0d754717f4" />
+    <None Include="Library\metadata\8f\8f8b248abe6b4dcebd6cdd0d754717f4.info" />
+    <None Include="Library\metadata\90\900f1a451c764dc3bdcc0de815a15935" />
+    <None Include="Library\metadata\90\900f1a451c764dc3bdcc0de815a15935.info" />
+    <None Include="Library\metadata\90\9022e5c5901733f46ad722c4fc0135d2" />
+    <None Include="Library\metadata\90\9022e5c5901733f46ad722c4fc0135d2.info" />
+    <None Include="Library\metadata\90\906c12bc9cd95d3963c6d58f62522c78" />
+    <None Include="Library\metadata\90\906c12bc9cd95d3963c6d58f62522c78.info" />
+    <None Include="Library\metadata\90\907731821455c4fa989ac14278e02251" />
+    <None Include="Library\metadata\90\907731821455c4fa989ac14278e02251.info" />
+    <None Include="Library\metadata\90\9078b7128e594410d9b89e5b24cffd01" />
+    <None Include="Library\metadata\90\9078b7128e594410d9b89e5b24cffd01.info" />
+    <None Include="Library\metadata\90\90791303b72ec4ae198f99d637dfdf6c" />
+    <None Include="Library\metadata\90\90791303b72ec4ae198f99d637dfdf6c.info" />
+    <None Include="Library\metadata\92\92027f7f8cfc4feaa477da0dc38d3d46" />
+    <None Include="Library\metadata\92\92027f7f8cfc4feaa477da0dc38d3d46.info" />
+    <None Include="Library\metadata\92\9288066c33474b94b6ee5465f4df1cc0" />
+    <None Include="Library\metadata\92\9288066c33474b94b6ee5465f4df1cc0.info" />
+    <None Include="Library\metadata\92\92a378669877c05c6071d0fed687bb95" />
+    <None Include="Library\metadata\92\92a378669877c05c6071d0fed687bb95.info" />
+    <None Include="Library\metadata\93\93c1370867fcb45079592da39e0994c5" />
+    <None Include="Library\metadata\93\93c1370867fcb45079592da39e0994c5.info" />
+    <None Include="Library\metadata\94\94b9f38ebd086314bb8f46b42c3eb330" />
+    <None Include="Library\metadata\94\94b9f38ebd086314bb8f46b42c3eb330.info" />
+    <None Include="Library\metadata\95\953fab16d15d5885b3600fcd6388b2ad" />
+    <None Include="Library\metadata\95\953fab16d15d5885b3600fcd6388b2ad.info" />
+    <None Include="Library\metadata\95\9541d86e2fd84c1d9990edf0852d74ab" />
+    <None Include="Library\metadata\95\9541d86e2fd84c1d9990edf0852d74ab.info" />
+    <None Include="Library\metadata\95\9545c9eb3bf94265810463794fec8334" />
+    <None Include="Library\metadata\95\9545c9eb3bf94265810463794fec8334.info" />
+    <None Include="Library\metadata\95\95f85adeda79e994f011eb2152cf4fc9" />
+    <None Include="Library\metadata\95\95f85adeda79e994f011eb2152cf4fc9.info" />
+    <None Include="Library\metadata\96\968a09f153574430a6e15ae975145768" />
+    <None Include="Library\metadata\96\968a09f153574430a6e15ae975145768.info" />
+    <None Include="Library\metadata\96\968d8077c138a70459e67ae58265fd65" />
+    <None Include="Library\metadata\96\968d8077c138a70459e67ae58265fd65.info" />
+    <None Include="Library\metadata\96\96b44f7d98314b139324a8a87eb66067" />
+    <None Include="Library\metadata\96\96b44f7d98314b139324a8a87eb66067.info" />
+    <None Include="Library\metadata\96\96d14b71b907bb52333b2886e665aba6" />
+    <None Include="Library\metadata\96\96d14b71b907bb52333b2886e665aba6.info" />
+    <None Include="Library\metadata\96\96e9072453a441618754c478755b3028" />
+    <None Include="Library\metadata\96\96e9072453a441618754c478755b3028.info" />
+    <None Include="Library\metadata\97\97059a25f482e2849827ba7bcee01afd" />
+    <None Include="Library\metadata\97\97059a25f482e2849827ba7bcee01afd.info" />
+    <None Include="Library\metadata\97\9797a466faf81db45982ff585e4f8e9c" />
+    <None Include="Library\metadata\97\9797a466faf81db45982ff585e4f8e9c.info" />
+    <None Include="Library\metadata\98\983d491088dbb4db8b83c926939a08c5" />
+    <None Include="Library\metadata\98\983d491088dbb4db8b83c926939a08c5.info" />
+    <None Include="Library\metadata\99\990a089e55741b44a93f3d4dd681f5b8" />
+    <None Include="Library\metadata\99\990a089e55741b44a93f3d4dd681f5b8.info" />
+    <None Include="Library\metadata\99\99ddb49592ff84811804420a1910cb89" />
+    <None Include="Library\metadata\99\99ddb49592ff84811804420a1910cb89.info" />
+    <None Include="Library\metadata\99\99e3f0c2b5e54694dbb1b61db7550631" />
+    <None Include="Library\metadata\99\99e3f0c2b5e54694dbb1b61db7550631.info" />
+    <None Include="Library\metadata\9a\9a2c874c382e2419184b302497279dd9" />
+    <None Include="Library\metadata\9a\9a2c874c382e2419184b302497279dd9.info" />
+    <None Include="Library\metadata\9b\9b3a918d590e4e1459441f9ead225410" />
+    <None Include="Library\metadata\9b\9b3a918d590e4e1459441f9ead225410.info" />
+    <None Include="Library\metadata\9b\9bfa90b88b1225f48ae372fd05b8b17f" />
+    <None Include="Library\metadata\9b\9bfa90b88b1225f48ae372fd05b8b17f.info" />
+    <None Include="Library\metadata\9c\9c2818d93c52113479e59e8058cf0675" />
+    <None Include="Library\metadata\9c\9c2818d93c52113479e59e8058cf0675.info" />
+    <None Include="Library\metadata\9c\9c7c268fa6492449654839df69f2a2f4" />
+    <None Include="Library\metadata\9c\9c7c268fa6492449654839df69f2a2f4.info" />
+    <None Include="Library\metadata\9d\9d345c3252c147c89e8b61a249a46a9d" />
+    <None Include="Library\metadata\9d\9d345c3252c147c89e8b61a249a46a9d.info" />
+    <None Include="Library\metadata\9d\9da568db70dafa345a908282554b3672" />
+    <None Include="Library\metadata\9d\9da568db70dafa345a908282554b3672.info" />
+    <None Include="Library\metadata\9d\9de24983a2c6cbe4f925c3e98a79b804" />
+    <None Include="Library\metadata\9d\9de24983a2c6cbe4f925c3e98a79b804.info" />
+    <None Include="Library\metadata\9d\9de9e8523c82543c5b3e40a4b51aa2c9" />
+    <None Include="Library\metadata\9d\9de9e8523c82543c5b3e40a4b51aa2c9.info" />
+    <None Include="Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863" />
+    <None Include="Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863.info" />
+    <None Include="Library\metadata\9e\9e820aa3dfdf93346a3c79ac09473ac0" />
+    <None Include="Library\metadata\9e\9e820aa3dfdf93346a3c79ac09473ac0.info" />
+    <None Include="Library\metadata\9e\9ec5dc72125424af38a9bfaca532acc8" />
+    <None Include="Library\metadata\9e\9ec5dc72125424af38a9bfaca532acc8.info" />
+    <None Include="Library\metadata\9e\9edc9283e7d6409fab242fe8fb6a822c" />
+    <None Include="Library\metadata\9e\9edc9283e7d6409fab242fe8fb6a822c.info" />
+    <None Include="Library\metadata\9f\9f091dea68a1452cb6c04a6dfa73d5f5" />
+    <None Include="Library\metadata\9f\9f091dea68a1452cb6c04a6dfa73d5f5.info" />
+    <None Include="Library\metadata\9f\9f17a0688211d476f8d8c9742bb9f992" />
+    <None Include="Library\metadata\9f\9f17a0688211d476f8d8c9742bb9f992.info" />
+    <None Include="Library\metadata\9f\9f24f3e0af05c364d9a637f92dd608b7" />
+    <None Include="Library\metadata\9f\9f24f3e0af05c364d9a637f92dd608b7.info" />
+    <None Include="Library\metadata\a2\a2d2e078736b94e5680096c99899b773" />
+    <None Include="Library\metadata\a2\a2d2e078736b94e5680096c99899b773.info" />
+    <None Include="Library\metadata\a3\a342381d77833427fa10621e38fbae10" />
+    <None Include="Library\metadata\a3\a342381d77833427fa10621e38fbae10.info" />
+    <None Include="Library\metadata\a3\a37e18887fa954edf92bc36bc353b879" />
+    <None Include="Library\metadata\a3\a37e18887fa954edf92bc36bc353b879.info" />
+    <None Include="Library\metadata\a5\a54eac0e085a44468963fa57f209470d" />
+    <None Include="Library\metadata\a5\a54eac0e085a44468963fa57f209470d.info" />
+    <None Include="Library\metadata\a5\a55fb7b4961a425381d1282fc424f966" />
+    <None Include="Library\metadata\a5\a55fb7b4961a425381d1282fc424f966.info" />
+    <None Include="Library\metadata\a5\a5e0a3419f531c240b16b86b2ac5497f" />
+    <None Include="Library\metadata\a5\a5e0a3419f531c240b16b86b2ac5497f.info" />
+    <None Include="Library\metadata\a5\a5edd19845e0e426eb775477a7988a4a" />
+    <None Include="Library\metadata\a5\a5edd19845e0e426eb775477a7988a4a.info" />
+    <None Include="Library\metadata\a6\a6842a74831964edc8fefa1c0aed89dc" />
+    <None Include="Library\metadata\a6\a6842a74831964edc8fefa1c0aed89dc.info" />
+    <None Include="Library\metadata\a7\a7b89acd74e047778b42209a7a733d39" />
+    <None Include="Library\metadata\a7\a7b89acd74e047778b42209a7a733d39.info" />
+    <None Include="Library\metadata\a7\a7ec9e7ad8b847b7ae4510af83c5d868" />
+    <None Include="Library\metadata\a7\a7ec9e7ad8b847b7ae4510af83c5d868.info" />
+    <None Include="Library\metadata\a8\a8d9e44eff3f447db9448925617ccb44" />
+    <None Include="Library\metadata\a8\a8d9e44eff3f447db9448925617ccb44.info" />
+    <None Include="Library\metadata\a8\a8e6ab54932422e4baa8860092080380" />
+    <None Include="Library\metadata\a8\a8e6ab54932422e4baa8860092080380.info" />
+    <None Include="Library\metadata\a8\a8f0717a83e409346a62058dbf48ab92" />
+    <None Include="Library\metadata\a8\a8f0717a83e409346a62058dbf48ab92.info" />
+    <None Include="Library\metadata\a9\a93704e54788a874680a0fb72cc7f811" />
+    <None Include="Library\metadata\a9\a93704e54788a874680a0fb72cc7f811.info" />
+    <None Include="Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0" />
+    <None Include="Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0.info" />
+    <None Include="Library\metadata\aa\aa160f27c3fe4052a5850e21108811b6" />
+    <None Include="Library\metadata\aa\aa160f27c3fe4052a5850e21108811b6.info" />
+    <None Include="Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9" />
+    <None Include="Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9.info" />
+    <None Include="Library\metadata\aa\aa76955fe5bb44f7915d91db8c7043c4" />
+    <None Include="Library\metadata\aa\aa76955fe5bb44f7915d91db8c7043c4.info" />
+    <None Include="Library\metadata\ab\ab2114bdc8544297b417dfefe9f1e410" />
+    <None Include="Library\metadata\ab\ab2114bdc8544297b417dfefe9f1e410.info" />
+    <None Include="Library\metadata\ab\ab866bd39382069418f5c179c1e1ab3e" />
+    <None Include="Library\metadata\ab\ab866bd39382069418f5c179c1e1ab3e.info" />
+    <None Include="Library\metadata\ab\abdc053b8e3644f299aedc641d609a84" />
+    <None Include="Library\metadata\ab\abdc053b8e3644f299aedc641d609a84.info" />
+    <None Include="Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e" />
+    <None Include="Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e.info" />
+    <None Include="Library\metadata\ad\ad45f133c9a6c0a42bc37fb9aa026935" />
+    <None Include="Library\metadata\ad\ad45f133c9a6c0a42bc37fb9aa026935.info" />
+    <None Include="Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f" />
+    <None Include="Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f.info" />
+    <None Include="Library\metadata\af\af520e2610bcc6a4b9bf1c2620f6f66a" />
+    <None Include="Library\metadata\af\af520e2610bcc6a4b9bf1c2620f6f66a.info" />
+    <None Include="Library\metadata\af\af77d853213b64700887ae98f21e4d72" />
+    <None Include="Library\metadata\af\af77d853213b64700887ae98f21e4d72.info" />
+    <None Include="Library\metadata\af\af978c9ff2a7a784c8afa7637b7ff41e" />
+    <None Include="Library\metadata\af\af978c9ff2a7a784c8afa7637b7ff41e.info" />
+    <None Include="Library\metadata\af\af9d00b32f367694c892070ed6c17d1b" />
+    <None Include="Library\metadata\af\af9d00b32f367694c892070ed6c17d1b.info" />
+    <None Include="Library\metadata\af\afd7697844f4142f9aa91471c1fba506" />
+    <None Include="Library\metadata\af\afd7697844f4142f9aa91471c1fba506.info" />
+    <None Include="Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59" />
+    <None Include="Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59.info" />
+    <None Include="Library\metadata\b0\b09be1f217d34247af54863a2f5587e1" />
+    <None Include="Library\metadata\b0\b09be1f217d34247af54863a2f5587e1.info" />
+    <None Include="Library\metadata\b0\b0c12f0066bd444a1b3a900679169f30" />
+    <None Include="Library\metadata\b0\b0c12f0066bd444a1b3a900679169f30.info" />
+    <None Include="Library\metadata\b1\b181a174758843d998af1f275856d318" />
+    <None Include="Library\metadata\b1\b181a174758843d998af1f275856d318.info" />
+    <None Include="Library\metadata\b2\b219c86ce508e478367c0a46e1aa9fe4" />
+    <None Include="Library\metadata\b2\b219c86ce508e478367c0a46e1aa9fe4.info" />
+    <None Include="Library\metadata\b2\b274f3d1ea05d4bd8a13f4556f7797d2" />
+    <None Include="Library\metadata\b2\b274f3d1ea05d4bd8a13f4556f7797d2.info" />
+    <None Include="Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e" />
+    <None Include="Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e.info" />
+    <None Include="Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70" />
+    <None Include="Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70.info" />
+    <None Include="Library\metadata\b3\b32abd1c9d73a4cce8389f084ac12b11" />
+    <None Include="Library\metadata\b3\b32abd1c9d73a4cce8389f084ac12b11.info" />
+    <None Include="Library\metadata\b3\b37622cc01173a741a2d80b943183261" />
+    <None Include="Library\metadata\b3\b37622cc01173a741a2d80b943183261.info" />
+    <None Include="Library\metadata\b5\b52e557db2c2b4eebb10444f1d582029" />
+    <None Include="Library\metadata\b5\b52e557db2c2b4eebb10444f1d582029.info" />
+    <None Include="Library\metadata\b5\b5392b6e72f69cb4d82b7b2c5716492b" />
+    <None Include="Library\metadata\b5\b5392b6e72f69cb4d82b7b2c5716492b.info" />
+    <None Include="Library\metadata\b5\b5d6c28ed7b94775be9e2560f300247c" />
+    <None Include="Library\metadata\b5\b5d6c28ed7b94775be9e2560f300247c.info" />
+    <None Include="Library\metadata\b5\b5da970776034f77a070d99423d68791" />
+    <None Include="Library\metadata\b5\b5da970776034f77a070d99423d68791.info" />
+    <None Include="Library\metadata\b5\b5f4343795a0e4626ac1fe4a9e6fce59" />
+    <None Include="Library\metadata\b5\b5f4343795a0e4626ac1fe4a9e6fce59.info" />
+    <None Include="Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f" />
+    <None Include="Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f.info" />
+    <None Include="Library\metadata\b7\b777b660ea24d3645ba9e1e005b197d0" />
+    <None Include="Library\metadata\b7\b777b660ea24d3645ba9e1e005b197d0.info" />
+    <None Include="Library\metadata\b7\b77b1ad9c05af0412725856c6c53b037" />
+    <None Include="Library\metadata\b7\b77b1ad9c05af0412725856c6c53b037.info" />
+    <None Include="Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b" />
+    <None Include="Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b.info" />
+    <None Include="Library\metadata\b7\b7f37df1e544af04dbde00391fcf2690" />
+    <None Include="Library\metadata\b7\b7f37df1e544af04dbde00391fcf2690.info" />
+    <None Include="Library\metadata\b8\b83f06ac0c0696e9563230865ca72b81" />
+    <None Include="Library\metadata\b8\b83f06ac0c0696e9563230865ca72b81.info" />
+    <None Include="Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a" />
+    <None Include="Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a.info" />
+    <None Include="Library\metadata\b9\b9f324f08cd904ec986357c98dd9eaa6" />
+    <None Include="Library\metadata\b9\b9f324f08cd904ec986357c98dd9eaa6.info" />
+    <None Include="Library\metadata\ba\bac185a28e198c1419b649ca946942ea" />
+    <None Include="Library\metadata\ba\bac185a28e198c1419b649ca946942ea.info" />
+    <None Include="Library\metadata\bb\bb05cab7d802aa5468f8f2f86840d984" />
+    <None Include="Library\metadata\bb\bb05cab7d802aa5468f8f2f86840d984.info" />
+    <None Include="Library\metadata\bb\bb15697a279504a90b825c44dc355047" />
+    <None Include="Library\metadata\bb\bb15697a279504a90b825c44dc355047.info" />
+    <None Include="Library\metadata\bb\bb42b2d967d6427983c901a4ffc8ecd9" />
+    <None Include="Library\metadata\bb\bb42b2d967d6427983c901a4ffc8ecd9.info" />
+    <None Include="Library\metadata\bb\bb8ea8e2c7f868441910637b9b94cf8e" />
+    <None Include="Library\metadata\bb\bb8ea8e2c7f868441910637b9b94cf8e.info" />
+    <None Include="Library\metadata\bb\bbec1324b05a54939ad2fea2d7e11063" />
+    <None Include="Library\metadata\bb\bbec1324b05a54939ad2fea2d7e11063.info" />
+    <None Include="Library\metadata\bc\bc00e25696e4132499f56528d3fed2e3" />
+    <None Include="Library\metadata\bc\bc00e25696e4132499f56528d3fed2e3.info" />
+    <None Include="Library\metadata\bc\bcd27da1c9ae94d2cafe094482a20792" />
+    <None Include="Library\metadata\bc\bcd27da1c9ae94d2cafe094482a20792.info" />
+    <None Include="Library\metadata\bd\bd2a94506431b6e4bbb9493028e60638" />
+    <None Include="Library\metadata\bd\bd2a94506431b6e4bbb9493028e60638.info" />
+    <None Include="Library\metadata\be\be4b06d1ee51e4ac2a01a0e499d4c214" />
+    <None Include="Library\metadata\be\be4b06d1ee51e4ac2a01a0e499d4c214.info" />
+    <None Include="Library\metadata\bf\bfd567a3d1631a761bca9e99fa53d86d" />
+    <None Include="Library\metadata\bf\bfd567a3d1631a761bca9e99fa53d86d.info" />
+    <None Include="Library\metadata\bf\bfd715cd54ab84c22b128149c12b516c" />
+    <None Include="Library\metadata\bf\bfd715cd54ab84c22b128149c12b516c.info" />
+    <None Include="Library\metadata\c0\c060426bfd6e82575228df6656368eaa" />
+    <None Include="Library\metadata\c0\c060426bfd6e82575228df6656368eaa.info" />
+    <None Include="Library\metadata\c0\c0838de665098794b95d16208ed54e48" />
+    <None Include="Library\metadata\c0\c0838de665098794b95d16208ed54e48.info" />
+    <None Include="Library\metadata\c0\c0e3d1e4ed4ea8441a6c34986fdbdc7e" />
+    <None Include="Library\metadata\c0\c0e3d1e4ed4ea8441a6c34986fdbdc7e.info" />
+    <None Include="Library\metadata\c1\c1080467a31b756c24b7e92941044962" />
+    <None Include="Library\metadata\c1\c1080467a31b756c24b7e92941044962.info" />
+    <None Include="Library\metadata\c2\c26474cb9ed86154a8e73bc6e8efc185" />
+    <None Include="Library\metadata\c2\c26474cb9ed86154a8e73bc6e8efc185.info" />
+    <None Include="Library\metadata\c2\c2f7f6a88b4c4f20a53deb72f3d9144c" />
+    <None Include="Library\metadata\c2\c2f7f6a88b4c4f20a53deb72f3d9144c.info" />
+    <None Include="Library\metadata\c3\c379d0ce3e8ca93498cf89740c7a2a34" />
+    <None Include="Library\metadata\c3\c379d0ce3e8ca93498cf89740c7a2a34.info" />
+    <None Include="Library\metadata\c4\c4337854e37894f40a5ccbd88e5d792d" />
+    <None Include="Library\metadata\c4\c4337854e37894f40a5ccbd88e5d792d.info" />
+    <None Include="Library\metadata\c4\c473528344665474cb62a8ebf17e7a92" />
+    <None Include="Library\metadata\c4\c473528344665474cb62a8ebf17e7a92.info" />
+    <None Include="Library\metadata\c4\c4c68c906ab1d428fbdcd9e1316e6600" />
+    <None Include="Library\metadata\c4\c4c68c906ab1d428fbdcd9e1316e6600.info" />
+    <None Include="Library\metadata\c4\c4df1124e2787ee0c8d1a911de17ee73" />
+    <None Include="Library\metadata\c4\c4df1124e2787ee0c8d1a911de17ee73.info" />
+    <None Include="Library\metadata\c5\c522a644a29fcab2eaf63298c118a65b" />
+    <None Include="Library\metadata\c5\c522a644a29fcab2eaf63298c118a65b.info" />
+    <None Include="Library\metadata\c5\c56efb0a640c6a349b089888347923f0" />
+    <None Include="Library\metadata\c5\c56efb0a640c6a349b089888347923f0.info" />
+    <None Include="Library\metadata\c5\c5ba7626a737840ff88a3bd84b100482" />
+    <None Include="Library\metadata\c5\c5ba7626a737840ff88a3bd84b100482.info" />
+    <None Include="Library\metadata\c6\c68ba5b432ef64e67ae0bf74960908a8" />
+    <None Include="Library\metadata\c6\c68ba5b432ef64e67ae0bf74960908a8.info" />
+    <None Include="Library\metadata\c6\c6f81bd388e5a254e8dcc5f02b63f120" />
+    <None Include="Library\metadata\c6\c6f81bd388e5a254e8dcc5f02b63f120.info" />
+    <None Include="Library\metadata\c7\c74ca176c244e4e14bc330098d620f13" />
+    <None Include="Library\metadata\c7\c74ca176c244e4e14bc330098d620f13.info" />
+    <None Include="Library\metadata\c7\c7559cdbc33f04af1a5a42d2aa5b40a5" />
+    <None Include="Library\metadata\c7\c7559cdbc33f04af1a5a42d2aa5b40a5.info" />
+    <None Include="Library\metadata\c7\c76700ea0062413d9f69409b4e9e151b" />
+    <None Include="Library\metadata\c7\c76700ea0062413d9f69409b4e9e151b.info" />
+    <None Include="Library\metadata\c7\c7e0809b02755e24f8133b643439733b" />
+    <None Include="Library\metadata\c7\c7e0809b02755e24f8133b643439733b.info" />
+    <None Include="Library\metadata\c8\c82d1ac640215da47b18f1b15e456a0e" />
+    <None Include="Library\metadata\c8\c82d1ac640215da47b18f1b15e456a0e.info" />
+    <None Include="Library\metadata\c9\c99bfe4fc4e5c4dc3917c14075acd117" />
+    <None Include="Library\metadata\c9\c99bfe4fc4e5c4dc3917c14075acd117.info" />
+    <None Include="Library\metadata\c9\c9b41ce180b4adf41a329a8643363452" />
+    <None Include="Library\metadata\c9\c9b41ce180b4adf41a329a8643363452.info" />
+    <None Include="Library\metadata\ca\ca51b19024094d1b87f3e07edb0a75fb" />
+    <None Include="Library\metadata\ca\ca51b19024094d1b87f3e07edb0a75fb.info" />
+    <None Include="Library\metadata\ca\ca53a6f1e29564d528bb56b92e0f181c" />
+    <None Include="Library\metadata\ca\ca53a6f1e29564d528bb56b92e0f181c.info" />
+    <None Include="Library\metadata\ca\ca647023177454af088b4c45041891cb" />
+    <None Include="Library\metadata\ca\ca647023177454af088b4c45041891cb.info" />
+    <None Include="Library\metadata\ca\ca77d26d10b9455ca5a4b22c93be2a31" />
+    <None Include="Library\metadata\ca\ca77d26d10b9455ca5a4b22c93be2a31.info" />
+    <None Include="Library\metadata\ca\ca819640f53b48919bf7774744f7f15e" />
+    <None Include="Library\metadata\ca\ca819640f53b48919bf7774744f7f15e.info" />
+    <None Include="Library\metadata\ca\cabaa672b0e3ee91fa7b6da4daab7970" />
+    <None Include="Library\metadata\ca\cabaa672b0e3ee91fa7b6da4daab7970.info" />
+    <None Include="Library\metadata\ca\caffda3b538cb49aea73798b4fc500b1" />
+    <None Include="Library\metadata\ca\caffda3b538cb49aea73798b4fc500b1.info" />
+    <None Include="Library\metadata\cb\cb3c46d30235e1c488286aa3ad62434d" />
+    <None Include="Library\metadata\cb\cb3c46d30235e1c488286aa3ad62434d.info" />
+    <None Include="Library\metadata\cc\cc1b50b5501f748da8bec762294d9136" />
+    <None Include="Library\metadata\cc\cc1b50b5501f748da8bec762294d9136.info" />
+    <None Include="Library\metadata\cc\cc4347574b823934ba11785e25895920" />
+    <None Include="Library\metadata\cc\cc4347574b823934ba11785e25895920.info" />
+    <None Include="Library\metadata\cd\cd0aa71ce21371942bc0ea9368569fcf" />
+    <None Include="Library\metadata\cd\cd0aa71ce21371942bc0ea9368569fcf.info" />
+    <None Include="Library\metadata\cd\cd2739997bcc7e343b8345efe4ee7e55" />
+    <None Include="Library\metadata\cd\cd2739997bcc7e343b8345efe4ee7e55.info" />
+    <None Include="Library\metadata\ce\ce4395ccdb12cf62fca756358be1a892" />
+    <None Include="Library\metadata\ce\ce4395ccdb12cf62fca756358be1a892.info" />
+    <None Include="Library\metadata\ce\ce4ff17ca867d2b48b5c8a4181611901" />
+    <None Include="Library\metadata\ce\ce4ff17ca867d2b48b5c8a4181611901.info" />
+    <None Include="Library\metadata\ce\cea79f9b7036164449c52e8210d30165" />
+    <None Include="Library\metadata\ce\cea79f9b7036164449c52e8210d30165.info" />
+    <None Include="Library\metadata\cf\cf1fe50a641faac4691bf49eb32ce333" />
+    <None Include="Library\metadata\cf\cf1fe50a641faac4691bf49eb32ce333.info" />
+    <None Include="Library\metadata\d0\d028fbbad11524d13a069f495ddcf01c" />
+    <None Include="Library\metadata\d0\d028fbbad11524d13a069f495ddcf01c.info" />
+    <None Include="Library\metadata\d0\d05b96cee66e14240838de167097537a" />
+    <None Include="Library\metadata\d0\d05b96cee66e14240838de167097537a.info" />
+    <None Include="Library\metadata\d0\d0e3ad91972c66f5238f5b9b7d5ae58a" />
+    <None Include="Library\metadata\d0\d0e3ad91972c66f5238f5b9b7d5ae58a.info" />
+    <None Include="Library\metadata\d1\d1a0a27327b54c3bac52a08929c33f81" />
+    <None Include="Library\metadata\d1\d1a0a27327b54c3bac52a08929c33f81.info" />
+    <None Include="Library\metadata\d1\d1c1a2d988f5148fd9ab17b2460d271e" />
+    <None Include="Library\metadata\d1\d1c1a2d988f5148fd9ab17b2460d271e.info" />
+    <None Include="Library\metadata\d2\d29cb3985930952479ebe9dc61c7b5ef" />
+    <None Include="Library\metadata\d2\d29cb3985930952479ebe9dc61c7b5ef.info" />
+    <None Include="Library\metadata\d3\d33d54853fd0f48e0ac8a63ea91e6626" />
+    <None Include="Library\metadata\d3\d33d54853fd0f48e0ac8a63ea91e6626.info" />
+    <None Include="Library\metadata\d3\d3cbe921f7b3d9a3257e7c61a5761796" />
+    <None Include="Library\metadata\d3\d3cbe921f7b3d9a3257e7c61a5761796.info" />
+    <None Include="Library\metadata\d4\d40e85137bc74864a47f42ceddfec228" />
+    <None Include="Library\metadata\d4\d40e85137bc74864a47f42ceddfec228.info" />
+    <None Include="Library\metadata\d5\d5a61f8cc87394b28aec6b88b4083217" />
+    <None Include="Library\metadata\d5\d5a61f8cc87394b28aec6b88b4083217.info" />
+    <None Include="Library\metadata\d5\d5f0b0adc6826e9dd3b72e292e8438be" />
+    <None Include="Library\metadata\d5\d5f0b0adc6826e9dd3b72e292e8438be.info" />
+    <None Include="Library\metadata\d6\d607a67dc772b484da060e66a3d61a4e" />
+    <None Include="Library\metadata\d6\d607a67dc772b484da060e66a3d61a4e.info" />
+    <None Include="Library\metadata\d6\d6a708dbb74414a6dbd60e07d9513c1c" />
+    <None Include="Library\metadata\d6\d6a708dbb74414a6dbd60e07d9513c1c.info" />
+    <None Include="Library\metadata\d6\d6c6a000a805f00649b36b542e8426c2" />
+    <None Include="Library\metadata\d6\d6c6a000a805f00649b36b542e8426c2.info" />
+    <None Include="Library\metadata\d6\d6db7caf2e852b75ebb9c6098418179c" />
+    <None Include="Library\metadata\d6\d6db7caf2e852b75ebb9c6098418179c.info" />
+    <None Include="Library\metadata\d7\d72e6637900cc4ff1849deedb971734b" />
+    <None Include="Library\metadata\d7\d72e6637900cc4ff1849deedb971734b.info" />
+    <None Include="Library\metadata\d7\d77259f363c009b41b4eb3a0676705d8" />
+    <None Include="Library\metadata\d7\d77259f363c009b41b4eb3a0676705d8.info" />
+    <None Include="Library\metadata\d7\d774316cf82be1a4fabe1d12821f579f" />
+    <None Include="Library\metadata\d7\d774316cf82be1a4fabe1d12821f579f.info" />
+    <None Include="Library\metadata\d8\d81fec850b3174dffbef820f3ee6f917" />
+    <None Include="Library\metadata\d8\d81fec850b3174dffbef820f3ee6f917.info" />
+    <None Include="Library\metadata\d8\d85e5eeaf8f135aeaaebdc8aa3cff6c3" />
+    <None Include="Library\metadata\d8\d85e5eeaf8f135aeaaebdc8aa3cff6c3.info" />
+    <None Include="Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0" />
+    <None Include="Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0.info" />
+    <None Include="Library\metadata\d9\d929147d9f78c487397abb40f2c257b0" />
+    <None Include="Library\metadata\d9\d929147d9f78c487397abb40f2c257b0.info" />
+    <None Include="Library\metadata\d9\d9647b571c5e44729b71d756b3d55317" />
+    <None Include="Library\metadata\d9\d9647b571c5e44729b71d756b3d55317.info" />
+    <None Include="Library\metadata\da\da0b41deddf0a4414b09681018c171f1" />
+    <None Include="Library\metadata\da\da0b41deddf0a4414b09681018c171f1.info" />
+    <None Include="Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c" />
+    <None Include="Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c.info" />
+    <None Include="Library\metadata\db\db8aaff416254941ad06a59da318af92" />
+    <None Include="Library\metadata\db\db8aaff416254941ad06a59da318af92.info" />
+    <None Include="Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb" />
+    <None Include="Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb.info" />
+    <None Include="Library\metadata\dc\dc5b3302c9c3bbe4fa095e51a936b609" />
+    <None Include="Library\metadata\dc\dc5b3302c9c3bbe4fa095e51a936b609.info" />
+    <None Include="Library\metadata\dc\dcc8c6e92b172a65719af5ddf47dd968" />
+    <None Include="Library\metadata\dc\dcc8c6e92b172a65719af5ddf47dd968.info" />
+    <None Include="Library\metadata\dc\dce91326f102345f3ba2f0987c0679c2" />
+    <None Include="Library\metadata\dc\dce91326f102345f3ba2f0987c0679c2.info" />
+    <None Include="Library\metadata\dc\dced8f6ea9f964e8e8e61574ea889d21" />
+    <None Include="Library\metadata\dc\dced8f6ea9f964e8e8e61574ea889d21.info" />
+    <None Include="Library\metadata\dd\dd026798bcc2ed94cb20fbdc919bd364" />
+    <None Include="Library\metadata\dd\dd026798bcc2ed94cb20fbdc919bd364.info" />
+    <None Include="Library\metadata\dd\dd2fe74169b54bf58fca17288513ef38" />
+    <None Include="Library\metadata\dd\dd2fe74169b54bf58fca17288513ef38.info" />
+    <None Include="Library\metadata\de\de71e186dcaf14b4aaa397467e1adb1b" />
+    <None Include="Library\metadata\de\de71e186dcaf14b4aaa397467e1adb1b.info" />
+    <None Include="Library\metadata\e0\e05ace3bd15740cda0bad60d89092a5b" />
+    <None Include="Library\metadata\e0\e05ace3bd15740cda0bad60d89092a5b.info" />
+    <None Include="Library\metadata\e1\e1007cd261c84053beb0c3537782908d" />
+    <None Include="Library\metadata\e1\e1007cd261c84053beb0c3537782908d.info" />
+    <None Include="Library\metadata\e1\e1ef8466c8fd01a549f10baa4d51fa17" />
+    <None Include="Library\metadata\e1\e1ef8466c8fd01a549f10baa4d51fa17.info" />
+    <None Include="Library\metadata\e2\e21bec35f48a44298911b25ead550ce3" />
+    <None Include="Library\metadata\e2\e21bec35f48a44298911b25ead550ce3.info" />
+    <None Include="Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743" />
+    <None Include="Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743.info" />
+    <None Include="Library\metadata\e4\e426a33061f184a9785cd5d82f9fb486" />
+    <None Include="Library\metadata\e4\e426a33061f184a9785cd5d82f9fb486.info" />
+    <None Include="Library\metadata\e4\e45f79867376940b7ba31502238d8efa" />
+    <None Include="Library\metadata\e4\e45f79867376940b7ba31502238d8efa.info" />
+    <None Include="Library\metadata\e4\e4e0b1de1aee400d81ed4273141e7823" />
+    <None Include="Library\metadata\e4\e4e0b1de1aee400d81ed4273141e7823.info" />
+    <None Include="Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a" />
+    <None Include="Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a.info" />
+    <None Include="Library\metadata\e5\e53bc96d2d054b8cbc811f0d73e761eb" />
+    <None Include="Library\metadata\e5\e53bc96d2d054b8cbc811f0d73e761eb.info" />
+    <None Include="Library\metadata\e5\e584f4a7cad1e45b7b74a3d434c813b5" />
+    <None Include="Library\metadata\e5\e584f4a7cad1e45b7b74a3d434c813b5.info" />
+    <None Include="Library\metadata\e6\e68b19693f02349c584a4624d3ca88ce" />
+    <None Include="Library\metadata\e6\e68b19693f02349c584a4624d3ca88ce.info" />
+    <None Include="Library\metadata\e6\e69259f6ff914146ad610be5491eb44a" />
+    <None Include="Library\metadata\e6\e69259f6ff914146ad610be5491eb44a.info" />
+    <None Include="Library\metadata\e6\e6925bb38494e6a43ba0921e65e424fe" />
+    <None Include="Library\metadata\e6\e6925bb38494e6a43ba0921e65e424fe.info" />
+    <None Include="Library\metadata\e6\e6a1d1e3d2384453a7371b4a07a41ca4" />
+    <None Include="Library\metadata\e6\e6a1d1e3d2384453a7371b4a07a41ca4.info" />
+    <None Include="Library\metadata\e8\e8262811c87d0854093bacaf2a074d62" />
+    <None Include="Library\metadata\e8\e8262811c87d0854093bacaf2a074d62.info" />
+    <None Include="Library\metadata\e8\e87e16ece4884c3bb85cc0e02f133a9f" />
+    <None Include="Library\metadata\e8\e87e16ece4884c3bb85cc0e02f133a9f.info" />
+    <None Include="Library\metadata\e9\e93e7254eb0eec9418c95a779bd81604" />
+    <None Include="Library\metadata\e9\e93e7254eb0eec9418c95a779bd81604.info" />
+    <None Include="Library\metadata\e9\e93ec7eb6de342aabd156833e253f838" />
+    <None Include="Library\metadata\e9\e93ec7eb6de342aabd156833e253f838.info" />
+    <None Include="Library\metadata\e9\e9635cdae52cd4035aced24955775a4b" />
+    <None Include="Library\metadata\e9\e9635cdae52cd4035aced24955775a4b.info" />
+    <None Include="Library\metadata\e9\e97892925590d3a4981ec81573edc459" />
+    <None Include="Library\metadata\e9\e97892925590d3a4981ec81573edc459.info" />
+    <None Include="Library\metadata\e9\e9df95f53f1c1d0c9199e235d6c42b50" />
+    <None Include="Library\metadata\e9\e9df95f53f1c1d0c9199e235d6c42b50.info" />
+    <None Include="Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680" />
+    <None Include="Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680.info" />
+    <None Include="Library\metadata\eb\eb50499f14acb6547a01ae9efc4ec729" />
+    <None Include="Library\metadata\eb\eb50499f14acb6547a01ae9efc4ec729.info" />
+    <None Include="Library\metadata\ec\ec02776fe29df900b897106d61977735" />
+    <None Include="Library\metadata\ec\ec02776fe29df900b897106d61977735.info" />
+    <None Include="Library\metadata\ed\ed041e68439749a69d0efa0e3d896c2e" />
+    <None Include="Library\metadata\ed\ed041e68439749a69d0efa0e3d896c2e.info" />
+    <None Include="Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea" />
+    <None Include="Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea.info" />
+    <None Include="Library\metadata\ed\ede0462698a4a5643aa9872c074acd38" />
+    <None Include="Library\metadata\ed\ede0462698a4a5643aa9872c074acd38.info" />
+    <None Include="Library\metadata\ee\ee148e281f3c41c5b4ff5f8a5afe5a6c" />
+    <None Include="Library\metadata\ee\ee148e281f3c41c5b4ff5f8a5afe5a6c.info" />
+    <None Include="Library\metadata\ee\eeed6954b3c264ca0b28a92aa6289bf0" />
+    <None Include="Library\metadata\ee\eeed6954b3c264ca0b28a92aa6289bf0.info" />
+    <None Include="Library\metadata\ef\ef5a2781610c4f12a79939f717f789cf" />
+    <None Include="Library\metadata\ef\ef5a2781610c4f12a79939f717f789cf.info" />
+    <None Include="Library\metadata\ef\ef5f5ff48b2d249029c8569481615c69" />
+    <None Include="Library\metadata\ef\ef5f5ff48b2d249029c8569481615c69.info" />
+    <None Include="Library\metadata\ef\effb76e1937b45ff8adf45e51a4c08cf" />
+    <None Include="Library\metadata\ef\effb76e1937b45ff8adf45e51a4c08cf.info" />
+    <None Include="Library\metadata\f0\f0f13f2ab3d6d13cfc6e4656824bfca8" />
+    <None Include="Library\metadata\f0\f0f13f2ab3d6d13cfc6e4656824bfca8.info" />
+    <None Include="Library\metadata\f0\f0fec68172b84dae8d5407bc0702a509" />
+    <None Include="Library\metadata\f0\f0fec68172b84dae8d5407bc0702a509.info" />
+    <None Include="Library\metadata\f1\f1045c695c5bf4fb7b8509687bc60fc0" />
+    <None Include="Library\metadata\f1\f1045c695c5bf4fb7b8509687bc60fc0.info" />
+    <None Include="Library\metadata\f1\f1687bb24464840ae9e1d253685ae0f6" />
+    <None Include="Library\metadata\f1\f1687bb24464840ae9e1d253685ae0f6.info" />
+    <None Include="Library\metadata\f1\f1ea944dcf8849ebab391e461b99ccb7" />
+    <None Include="Library\metadata\f1\f1ea944dcf8849ebab391e461b99ccb7.info" />
+    <None Include="Library\metadata\f2\f251da245a54b27439a3285c59383bac" />
+    <None Include="Library\metadata\f2\f251da245a54b27439a3285c59383bac.info" />
+    <None Include="Library\metadata\f2\f28fcced5af094cf78eb4e1109a71981" />
+    <None Include="Library\metadata\f2\f28fcced5af094cf78eb4e1109a71981.info" />
+    <None Include="Library\metadata\f3\f34f5fa2437664b2a81b4a7f34df87ad" />
+    <None Include="Library\metadata\f3\f34f5fa2437664b2a81b4a7f34df87ad.info" />
+    <None Include="Library\metadata\f4\f4688fdb7df04437aeb418b961361dc5" />
+    <None Include="Library\metadata\f4\f4688fdb7df04437aeb418b961361dc5.info" />
+    <None Include="Library\metadata\f4\f4845225cf0e4acfab0f1903ff872bc9" />
+    <None Include="Library\metadata\f4\f4845225cf0e4acfab0f1903ff872bc9.info" />
+    <None Include="Library\metadata\f4\f4935fb862d54980b1bcbca942962642" />
+    <None Include="Library\metadata\f4\f4935fb862d54980b1bcbca942962642.info" />
+    <None Include="Library\metadata\f4\f499e12eaeb145bf9022f581c0b7fa5b" />
+    <None Include="Library\metadata\f4\f499e12eaeb145bf9022f581c0b7fa5b.info" />
+    <None Include="Library\metadata\f4\f4da9cbb408be44968e85ee20767deef" />
+    <None Include="Library\metadata\f4\f4da9cbb408be44968e85ee20767deef.info" />
+    <None Include="Library\metadata\f5\f52471e21bb765141818cf441978b086" />
+    <None Include="Library\metadata\f5\f52471e21bb765141818cf441978b086.info" />
+    <None Include="Library\metadata\f5\f5600e6ae5a1464da659eca36bef9d64" />
+    <None Include="Library\metadata\f5\f5600e6ae5a1464da659eca36bef9d64.info" />
+    <None Include="Library\metadata\f5\f56106f3dc85c274a85209d29ece0e7e" />
+    <None Include="Library\metadata\f5\f56106f3dc85c274a85209d29ece0e7e.info" />
+    <None Include="Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8" />
+    <None Include="Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8.info" />
+    <None Include="Library\metadata\f6\f68d88b9933cd4204925b22192bf15b4" />
+    <None Include="Library\metadata\f6\f68d88b9933cd4204925b22192bf15b4.info" />
+    <None Include="Library\metadata\f6\f695b5f9415c40b39ae877eaff41c96e" />
+    <None Include="Library\metadata\f6\f695b5f9415c40b39ae877eaff41c96e.info" />
+    <None Include="Library\metadata\f7\f70555f144d8491a825f0804e09c671c" />
+    <None Include="Library\metadata\f7\f70555f144d8491a825f0804e09c671c.info" />
+    <None Include="Library\metadata\f7\f7a8357347c80dc69c08d0b1a05e2122" />
+    <None Include="Library\metadata\f7\f7a8357347c80dc69c08d0b1a05e2122.info" />
+    <None Include="Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc" />
+    <None Include="Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc.info" />
+    <None Include="Library\metadata\f7\f7b8813687894ccf9d4e8261242250a0" />
+    <None Include="Library\metadata\f7\f7b8813687894ccf9d4e8261242250a0.info" />
+    <None Include="Library\metadata\f8\f80c8a02620b5154ea37561061fd7d70" />
+    <None Include="Library\metadata\f8\f80c8a02620b5154ea37561061fd7d70.info" />
+    <None Include="Library\metadata\f8\f851ca8f9604f442aafccf60a6713ce9" />
+    <None Include="Library\metadata\f8\f851ca8f9604f442aafccf60a6713ce9.info" />
+    <None Include="Library\metadata\f8\f8e6a2d47aba4c6c9b3c5a72d9f48da5" />
+    <None Include="Library\metadata\f8\f8e6a2d47aba4c6c9b3c5a72d9f48da5.info" />
+    <None Include="Library\metadata\f8\f8eca3a711f4842eba0c52ea9885ef7f" />
+    <None Include="Library\metadata\f8\f8eca3a711f4842eba0c52ea9885ef7f.info" />
+    <None Include="Library\metadata\fa\fa27413e9edb06a6058d6c894eca0338" />
+    <None Include="Library\metadata\fa\fa27413e9edb06a6058d6c894eca0338.info" />
+    <None Include="Library\metadata\fa\fa44424847bc73346a89136ba6c56195" />
+    <None Include="Library\metadata\fa\fa44424847bc73346a89136ba6c56195.info" />
+    <None Include="Library\metadata\fa\fa486d7cc0b2a414a86348e3524541d4" />
+    <None Include="Library\metadata\fa\fa486d7cc0b2a414a86348e3524541d4.info" />
+    <None Include="Library\metadata\fa\fa6bd40a216346b783a4cce741d277a5" />
+    <None Include="Library\metadata\fa\fa6bd40a216346b783a4cce741d277a5.info" />
+    <None Include="Library\metadata\fc\fc3a810351931f5e6183e16b9beb5563" />
+    <None Include="Library\metadata\fc\fc3a810351931f5e6183e16b9beb5563.info" />
+    <None Include="Library\metadata\fc\fc6c9b20110931c4aaf98b7916445ece" />
+    <None Include="Library\metadata\fc\fc6c9b20110931c4aaf98b7916445ece.info" />
+    <None Include="Library\metadata\fc\fcc60c1d6bb544d9b712b652f418ff3a" />
+    <None Include="Library\metadata\fc\fcc60c1d6bb544d9b712b652f418ff3a.info" />
+    <None Include="Library\metadata\fd\fd382b8abbd6145c29e32af0e2a26d88" />
+    <None Include="Library\metadata\fd\fd382b8abbd6145c29e32af0e2a26d88.info" />
+    <None Include="Library\metadata\fd\fd871a8be47119612f7c254e96a822b7" />
+    <None Include="Library\metadata\fd\fd871a8be47119612f7c254e96a822b7.info" />
+    <None Include="Library\metadata\fe\fe684bbd80eab45778b9eb316893ff7c" />
+    <None Include="Library\metadata\fe\fe684bbd80eab45778b9eb316893ff7c.info" />
+    <None Include="Library\metadata\fe\fea24dc53b50441a9b2a8f9473fede33" />
+    <None Include="Library\metadata\fe\fea24dc53b50441a9b2a8f9473fede33.info" />
+    <None Include="Library\metadata\fe\fea49a0730244a98bf1087f7ca9410a8" />
+    <None Include="Library\metadata\fe\fea49a0730244a98bf1087f7ca9410a8.info" />
+    <None Include="Library\metadata\fe\fec197bad419341558f81f2ec8a05e18" />
+    <None Include="Library\metadata\fe\fec197bad419341558f81f2ec8a05e18.info" />
+    <None Include="Library\metadata\ff\ffc00c0d4602d8545a25b63c2f1d3933" />
+    <None Include="Library\metadata\ff\ffc00c0d4602d8545a25b63c2f1d3933.info" />
+    <None Include="Library\MonoManager.asset" />
+    <None Include="Library\ProjectSettings.asset" />
+    <None Include="Library\ScriptAssemblies\BuiltinAssemblies.stamp" />
+    <None Include="Library\ScriptMapper" />
+    <None Include="Library\ShaderCache.db" />
+    <None Include="Library\ShaderCache\0\00b3ad38d1344b1755fd5c6285112132.bin" />
+    <None Include="Library\ShaderCache\0\01bd0fbb324b8f3374811fb4fb669a54.bin" />
+    <None Include="Library\ShaderCache\0\03dec910cf79bf4559d52788a54927cb.bin" />
+    <None Include="Library\ShaderCache\0\03fde6be61679bfce34f471d09f59341.bin" />
+    <None Include="Library\ShaderCache\0\049d0a016623804c6bd8727345a3190e.bin" />
+    <None Include="Library\ShaderCache\0\06c4c56c23df98a8a4c3753c5bc7c966.bin" />
+    <None Include="Library\ShaderCache\0\097126bf05347ad663819a064e6d9af2.bin" />
+    <None Include="Library\ShaderCache\0\0a67ffc1953f9e5170994ab5340e3078.bin" />
+    <None Include="Library\ShaderCache\0\0ab855a4f70a9a54873f50ece6602ca1.bin" />
+    <None Include="Library\ShaderCache\0\0c202803f4130f181eed576857d8b4ce.bin" />
+    <None Include="Library\ShaderCache\0\0d16f8f7a5b9c578fe67050a4dbc5251.bin" />
+    <None Include="Library\ShaderCache\0\0de364dcde604ac2282ebe806f3a7f40.bin" />
+    <None Include="Library\ShaderCache\1\106b969175ee95d878c37f865ceb5706.bin" />
+    <None Include="Library\ShaderCache\1\10f9b87dfec5f54cc4650fd7935ed5ba.bin" />
+    <None Include="Library\ShaderCache\1\11346faa24f38b806f58ed050477f17f.bin" />
+    <None Include="Library\ShaderCache\1\123325dc7f1da2f18023d95d285ba8af.bin" />
+    <None Include="Library\ShaderCache\1\12c11bb98adc78b88489c2133e6d8586.bin" />
+    <None Include="Library\ShaderCache\1\1313b0c8479ffd93aab84b4b291c85fb.bin" />
+    <None Include="Library\ShaderCache\1\137a12b4f62d41928b0680fcfd6d898c.bin" />
+    <None Include="Library\ShaderCache\1\144c8366535aad747e8defb3de9fe3af.bin" />
+    <None Include="Library\ShaderCache\1\1656c5e1c27822320dbfbde7546c8d83.bin" />
+    <None Include="Library\ShaderCache\1\189d987fe6340a7563c4ab92c5555420.bin" />
+    <None Include="Library\ShaderCache\1\18d604bb54f92e5f923da514168869b9.bin" />
+    <None Include="Library\ShaderCache\1\193ec50dbc8d564b7fae0fb05d9576bf.bin" />
+    <None Include="Library\ShaderCache\1\19821de24f90204e3b0a532d62d3a2e9.bin" />
+    <None Include="Library\ShaderCache\1\1ccd8cf2f9e7d43f7017cface2eca928.bin" />
+    <None Include="Library\ShaderCache\1\1d4c38bd0ab94b0a40261a3ce9fcbfe6.bin" />
+    <None Include="Library\ShaderCache\1\1ec2b0bdc2d0445b0bf2aef9715a75a6.bin" />
+    <None Include="Library\ShaderCache\1\1f3b6fddb405f9f12a9b8845c91feae3.bin" />
+    <None Include="Library\ShaderCache\2\20576968d070145eb5836d58ca5c99ce.bin" />
+    <None Include="Library\ShaderCache\2\218250947fb76daf218a6fc437126c8b.bin" />
+    <None Include="Library\ShaderCache\2\2326527db1b956ca6ff65ef97359f449.bin" />
+    <None Include="Library\ShaderCache\2\246eab6a066d11117fbaf8052aae0728.bin" />
+    <None Include="Library\ShaderCache\2\266d08585bd2fd152de06a2b80b70294.bin" />
+    <None Include="Library\ShaderCache\2\275b9bb8cdf95c233060a549c5e36feb.bin" />
+    <None Include="Library\ShaderCache\2\293d2c09c8efffda9170624aeb41a483.bin" />
+    <None Include="Library\ShaderCache\2\293fb2e567b02a862cb422b5fc048b6c.bin" />
+    <None Include="Library\ShaderCache\2\2a2cdf7932eb877abd5ee195f0e228fe.bin" />
+    <None Include="Library\ShaderCache\2\2aaf5d91047afa420836bff9104b6d66.bin" />
+    <None Include="Library\ShaderCache\2\2af48c12972db50e92a8ce8e430c4095.bin" />
+    <None Include="Library\ShaderCache\2\2b75de94845027235cf20b2c514ffffc.bin" />
+    <None Include="Library\ShaderCache\2\2b7aa96c5bc14567b5700cd8987fb02c.bin" />
+    <None Include="Library\ShaderCache\2\2c61d82426361bc2bcc9b79786838f04.bin" />
+    <None Include="Library\ShaderCache\2\2deeafd07ea547f10c41837336e0527f.bin" />
+    <None Include="Library\ShaderCache\2\2f6a335b5d64ed6994f22e1819fc6aac.bin" />
+    <None Include="Library\ShaderCache\3\321ee39bb820c1c517693e1baa2e3e5b.bin" />
+    <None Include="Library\ShaderCache\3\32f4a5f008d041d4468caa420a69ab73.bin" />
+    <None Include="Library\ShaderCache\3\34e7a3f0ca3731c29329d56c9c65a87d.bin" />
+    <None Include="Library\ShaderCache\3\352518e1fc0961eea07bd11e20a1e4cb.bin" />
+    <None Include="Library\ShaderCache\3\352d8fb076dc1ffabf8369ca6b8241d3.bin" />
+    <None Include="Library\ShaderCache\3\35673037ef67160260bc6ec8633ae51a.bin" />
+    <None Include="Library\ShaderCache\3\35b30a6219950ab29be89bed13051051.bin" />
+    <None Include="Library\ShaderCache\3\35c5c4a4f925022b12b53d8ab30e2cdd.bin" />
+    <None Include="Library\ShaderCache\3\374a0d1e738b11423e17e98497e9843b.bin" />
+    <None Include="Library\ShaderCache\3\3999dc776c20e35b4785789dbf1d37c0.bin" />
+    <None Include="Library\ShaderCache\3\3a062bacc7059d064d9330e293927802.bin" />
+    <None Include="Library\ShaderCache\3\3a35cac4b337990256d8d43720bbeff7.bin" />
+    <None Include="Library\ShaderCache\3\3a51c67c06a590ad8bcf649d4662e15e.bin" />
+    <None Include="Library\ShaderCache\3\3ae4727e29a1c2751ba613aa16bb157e.bin" />
+    <None Include="Library\ShaderCache\3\3b97b21cbf0eb0875d269d5a97100d74.bin" />
+    <None Include="Library\ShaderCache\3\3baf833986bf433594f2ca936e0cd069.bin" />
+    <None Include="Library\ShaderCache\3\3eb41ba0279c517036829c28ae9ea10a.bin" />
+    <None Include="Library\ShaderCache\3\3f60193d0f60e61076c32b88acb95b13.bin" />
+    <None Include="Library\ShaderCache\4\41b5976fe1c065aeee8feb85f30776cf.bin" />
+    <None Include="Library\ShaderCache\4\448733b72251d6e5bb7173b108c5e9ba.bin" />
+    <None Include="Library\ShaderCache\4\44e2e7a43235bfba1d380716f37d9f32.bin" />
+    <None Include="Library\ShaderCache\4\4536d0e2a58209a3fd6e1fa0328bd4d1.bin" />
+    <None Include="Library\ShaderCache\4\45469ca3d0962aa32291244672fa53d2.bin" />
+    <None Include="Library\ShaderCache\4\46cc7fa1340b6de7bfec84287abc780c.bin" />
+    <None Include="Library\ShaderCache\4\4b52c708086c1dfe626c687c6c03c779.bin" />
+    <None Include="Library\ShaderCache\4\4ddeab92631079657243e64f37b3654f.bin" />
+    <None Include="Library\ShaderCache\4\4f566ec15eb20e7f77ff2cb3e9d608fe.bin" />
+    <None Include="Library\ShaderCache\4\4f64568542b8134d7cf37bace3cef11f.bin" />
+    <None Include="Library\ShaderCache\5\50819e60a514de8b9761fbbcb9b1c8ca.bin" />
+    <None Include="Library\ShaderCache\5\537c3eff3c2918bee840f2ed7034ed52.bin" />
+    <None Include="Library\ShaderCache\5\55a08134c2e740d2388227a277d35a77.bin" />
+    <None Include="Library\ShaderCache\5\584978c182a2e02f3e422e54132030cf.bin" />
+    <None Include="Library\ShaderCache\5\58e168740a9e28298ecf82dc930e581f.bin" />
+    <None Include="Library\ShaderCache\5\596477dbf71c7cacabd3029c8831b8d1.bin" />
+    <None Include="Library\ShaderCache\5\5d7320ec10f7c6a1fef96084dfc735b5.bin" />
+    <None Include="Library\ShaderCache\5\5dd8fcbae71be31a7986418c3710673c.bin" />
+    <None Include="Library\ShaderCache\5\5e9d089ffb880abd3abb22651b6914d6.bin" />
+    <None Include="Library\ShaderCache\5\5f008cc183a445436832cfd8cc94ca09.bin" />
+    <None Include="Library\ShaderCache\6\6137efb8ab0b35aac66e10fc3daf8fdb.bin" />
+    <None Include="Library\ShaderCache\6\62662d5bef38716ca6b8506706041f55.bin" />
+    <None Include="Library\ShaderCache\6\62788a9bcb8de1cd81ff1ee26ab5f235.bin" />
+    <None Include="Library\ShaderCache\6\63705223fcbec2db071e716cfae9f53c.bin" />
+    <None Include="Library\ShaderCache\6\64e3e778375451964fe1eaca7c49946e.bin" />
+    <None Include="Library\ShaderCache\6\658b524bd15c7534ead2bf2f17fa9e8b.bin" />
+    <None Include="Library\ShaderCache\6\664f5f7362c1ecbb343e3863fa45cb3e.bin" />
+    <None Include="Library\ShaderCache\6\69ee9a7b4d73e85c46af5fe718704f0f.bin" />
+    <None Include="Library\ShaderCache\6\6aaff0e45269cb72e1a75da09874b0aa.bin" />
+    <None Include="Library\ShaderCache\6\6ae204fbdc24a0e57cbaed1a98ffbf89.bin" />
+    <None Include="Library\ShaderCache\6\6bff3e85521188510fbc69ec55bd9833.bin" />
+    <None Include="Library\ShaderCache\6\6c4aba579459a43511e36f27238bdeee.bin" />
+    <None Include="Library\ShaderCache\6\6c5e2c72c501807d74d8ee09e6d2c417.bin" />
+    <None Include="Library\ShaderCache\6\6d7d7cbddf87ab6823e7f90f21c0a93b.bin" />
+    <None Include="Library\ShaderCache\7\73c61fcc3a20467f0faad279ae498e38.bin" />
+    <None Include="Library\ShaderCache\7\745b4bedb90d7843ce1fff6ec756f1bc.bin" />
+    <None Include="Library\ShaderCache\7\7460445d60ce1d47566f8cc410fe2c9d.bin" />
+    <None Include="Library\ShaderCache\7\750aeb6312ddf6d6204912542a7390c5.bin" />
+    <None Include="Library\ShaderCache\7\75154676e517dcaa311d8e2e70f4fd41.bin" />
+    <None Include="Library\ShaderCache\7\7700f56065fad9fbafc72545e9f8ac43.bin" />
+    <None Include="Library\ShaderCache\7\77d711d7e0da30d98f4fd9d6fc7a35a3.bin" />
+    <None Include="Library\ShaderCache\7\799c5bb5e08caae98b2b42240ae5c059.bin" />
+    <None Include="Library\ShaderCache\7\7cfff0929d18fb24ab3bc23957dabc87.bin" />
+    <None Include="Library\ShaderCache\7\7d8fca49f8540dc9d27815d5dee84d1f.bin" />
+    <None Include="Library\ShaderCache\7\7e26182cda4bfc05cdb8538c5ba09434.bin" />
+    <None Include="Library\ShaderCache\8\804e60a62ee97cdb1cc94a4cf7473340.bin" />
+    <None Include="Library\ShaderCache\8\80f2b4775cba68f97caf0b20291859a1.bin" />
+    <None Include="Library\ShaderCache\8\8101393f60ec1ac3794420a2bda47c79.bin" />
+    <None Include="Library\ShaderCache\8\820bef52cef1166da982193d3b3e2934.bin" />
+    <None Include="Library\ShaderCache\8\84b4250e06a707b9acdd6ed7a9344f0d.bin" />
+    <None Include="Library\ShaderCache\8\84d7a6c61270696a3f04ee61be7a23cb.bin" />
+    <None Include="Library\ShaderCache\8\8566699b344fc4908c402dac2d2b8a60.bin" />
+    <None Include="Library\ShaderCache\8\85f7e8caf66272fc2ff47256dd3e4cee.bin" />
+    <None Include="Library\ShaderCache\8\88f2f1ae4f44769c1d7b482bf13845dc.bin" />
+    <None Include="Library\ShaderCache\8\894c5038aa0d2c9993fc4548642e017d.bin" />
+    <None Include="Library\ShaderCache\8\8c7e6515d7d44bcbda971cb2c24e7702.bin" />
+    <None Include="Library\ShaderCache\8\8f3d63714c0b9b0acab4df4dcb2d484a.bin" />
+    <None Include="Library\ShaderCache\9\913981346983bc37ca1608c7eeca3c86.bin" />
+    <None Include="Library\ShaderCache\9\91fb80e6f86cb3ec007128df0bc34113.bin" />
+    <None Include="Library\ShaderCache\9\93c11e224d3b233f16fe1a88bc17a0ae.bin" />
+    <None Include="Library\ShaderCache\9\94d61f0e9681b7dadcd653be93e7a115.bin" />
+    <None Include="Library\ShaderCache\9\957e0ff25832dc0e6db27a90375f76df.bin" />
+    <None Include="Library\ShaderCache\9\977bd3ed3419c210a84392f4882a9e89.bin" />
+    <None Include="Library\ShaderCache\9\9bb194dee3f544c6cda296913683ae6f.bin" />
+    <None Include="Library\ShaderCache\9\9ccf209280ad842e6b4abce0f1087188.bin" />
+    <None Include="Library\ShaderCache\9\9d1bae6336b5baf8f95c770dcc417d2a.bin" />
+    <None Include="Library\ShaderCache\9\9ddebb9d89a3720f9d7a1f316b6e2cbd.bin" />
+    <None Include="Library\ShaderCache\a\a0e3e07fcf9b615b5b9843d20fc0b06d.bin" />
+    <None Include="Library\ShaderCache\a\a16128f40dfc3d008d1d1a587b49d7cd.bin" />
+    <None Include="Library\ShaderCache\a\a17cff20ecd3770caf48cb2fce72f156.bin" />
+    <None Include="Library\ShaderCache\a\a2927bb6d7435087ad2238fbcb8f0039.bin" />
+    <None Include="Library\ShaderCache\a\a30ca58c3edab9935d52893674950d84.bin" />
+    <None Include="Library\ShaderCache\a\a6a66af95596e1a7234b9c209dad4d44.bin" />
+    <None Include="Library\ShaderCache\a\a7a47c0277d6681ab6d7fee03d1f6ef9.bin" />
+    <None Include="Library\ShaderCache\a\a7f0fc98db0e3b89f245e0b6ddf73207.bin" />
+    <None Include="Library\ShaderCache\a\a92beed0086c3e4bef81d7259e2edd66.bin" />
+    <None Include="Library\ShaderCache\a\a9364f8967ec225fb7388dfe6d73db4a.bin" />
+    <None Include="Library\ShaderCache\a\a9df83fe51e216b94e2bfe38c4076adb.bin" />
+    <None Include="Library\ShaderCache\a\aae106ad853ca9f689b5ad82493d0ea9.bin" />
+    <None Include="Library\ShaderCache\a\aafca83881a65d8f67dd950b826b5d7e.bin" />
+    <None Include="Library\ShaderCache\a\aca12028afbec9485318b1fb22a35aeb.bin" />
+    <None Include="Library\ShaderCache\a\acee77fe943ffe53f295250da69677cd.bin" />
+    <None Include="Library\ShaderCache\b\b015321f39bebe5012b2c1a760903b03.bin" />
+    <None Include="Library\ShaderCache\b\b05dba97e0dc09c46fc6475024cae033.bin" />
+    <None Include="Library\ShaderCache\b\b0eb01fc73642dbc553ada143fb9853b.bin" />
+    <None Include="Library\ShaderCache\b\b161c8f056c7c406fbce3de02ff2de47.bin" />
+    <None Include="Library\ShaderCache\b\b21ad447905f65226fc617682524de99.bin" />
+    <None Include="Library\ShaderCache\b\b3c0e03173a699f7a45c0b5c8e2211a6.bin" />
+    <None Include="Library\ShaderCache\b\b3e18d899867a8f5825ee03a547a973e.bin" />
+    <None Include="Library\ShaderCache\b\b415cd5e99dbfe4716713feb8052bd78.bin" />
+    <None Include="Library\ShaderCache\b\b6103b7ff86b0b6a15defdcd3dbb9a52.bin" />
+    <None Include="Library\ShaderCache\b\b861647f7ac142d7837817e885ce9759.bin" />
+    <None Include="Library\ShaderCache\b\b8649008fc3de43efe60de5b0177f10d.bin" />
+    <None Include="Library\ShaderCache\b\b908f3294c4069ce479c2a4ba5785032.bin" />
+    <None Include="Library\ShaderCache\b\b96c01a421c9b75d7517f5423747c340.bin" />
+    <None Include="Library\ShaderCache\b\ba46c9ce125925d23b5f53ac8b131324.bin" />
+    <None Include="Library\ShaderCache\b\ba938673b866b20218024ed868163e4a.bin" />
+    <None Include="Library\ShaderCache\b\bc22d71dcea36877620cae506b87f2ba.bin" />
+    <None Include="Library\ShaderCache\b\bcd1d0943d13484a7c19fdbfa9c9f896.bin" />
+    <None Include="Library\ShaderCache\b\bfc297edfc2def1f105dd15bfd6c620d.bin" />
+    <None Include="Library\ShaderCache\c\c175e8261134dcb22dd224364d950e44.bin" />
+    <None Include="Library\ShaderCache\c\c19a20783b63f561167fc064a3c44d4f.bin" />
+    <None Include="Library\ShaderCache\c\c347638dfdbc32131d41ea5d086cf441.bin" />
+    <None Include="Library\ShaderCache\c\c3fecee40a52d0754751fe45141bed66.bin" />
+    <None Include="Library\ShaderCache\c\c616499b8f145f83bf3a98bb8e81ba19.bin" />
+    <None Include="Library\ShaderCache\c\c6494237f680105846a16bf6ac2f4cf7.bin" />
+    <None Include="Library\ShaderCache\c\c824812f5311fa6c1964fc7908e793b1.bin" />
+    <None Include="Library\ShaderCache\c\c93e9bb43615475e4ebaac0a0b860f8a.bin" />
+    <None Include="Library\ShaderCache\c\ca2abf5d76e3e4ba88afcc94041f1b61.bin" />
+    <None Include="Library\ShaderCache\c\cb4507f94699202f39ebb2b641985446.bin" />
+    <None Include="Library\ShaderCache\c\cbc3f6215a04c5d4e677c4aa4fbb843e.bin" />
+    <None Include="Library\ShaderCache\c\cbfe4eea6138dc35e41e6c179716909f.bin" />
+    <None Include="Library\ShaderCache\c\cea9452c57bf532a9489e94fbab2fa40.bin" />
+    <None Include="Library\ShaderCache\c\cfd11cd06c4a62c49d9445b6cf5cd1ca.bin" />
+    <None Include="Library\ShaderCache\c\cfed76da5c30c4769f61603276473392.bin" />
+    <None Include="Library\ShaderCache\d\d10c2f8b2632504037310eaad55f149e.bin" />
+    <None Include="Library\ShaderCache\d\d3255d727491899a167398ed4fc48559.bin" />
+    <None Include="Library\ShaderCache\d\d358cea7e0be381a8d0b53a3c4837089.bin" />
+    <None Include="Library\ShaderCache\d\d368cbef5116764f9fcba8ba5c0651bb.bin" />
+    <None Include="Library\ShaderCache\d\d3938aa8813c42d24554d41b3006ec9b.bin" />
+    <None Include="Library\ShaderCache\d\d3cdbfdea4b0e45b5c152ed3c487f521.bin" />
+    <None Include="Library\ShaderCache\d\d46092457fc813dad36b2d28cf9e0262.bin" />
+    <None Include="Library\ShaderCache\d\d69ea13ce7a49c244816763714f3989c.bin" />
+    <None Include="Library\ShaderCache\d\d6c00ef17ccd8dbc68618dd5efc135f5.bin" />
+    <None Include="Library\ShaderCache\d\d7956985477d677467af060829f2207a.bin" />
+    <None Include="Library\ShaderCache\d\d868972ab8c84bf9bce82a94eac5766f.bin" />
+    <None Include="Library\ShaderCache\d\d9635896524747d4d52b8add0ce4734f.bin" />
+    <None Include="Library\ShaderCache\d\da43c2528bb2309257045b44a1dc125c.bin" />
+    <None Include="Library\ShaderCache\d\dac1c4ac676a8a905f636de7ededc322.bin" />
+    <None Include="Library\ShaderCache\d\db015b86bf2964987bf38401855944f7.bin" />
+    <None Include="Library\ShaderCache\d\dce02768db0274af30ef10ec9ac1a537.bin" />
+    <None Include="Library\ShaderCache\d\dd7c80b7df187114c9a44f695763de71.bin" />
+    <None Include="Library\ShaderCache\d\df3c326f0bf9f87182fbbd9e130c9339.bin" />
+    <None Include="Library\ShaderCache\d\df8399b67ec82846b5c3677e6b29d962.bin" />
+    <None Include="Library\ShaderCache\e\e17c87e3a25394cf09c3761be2c8ebcb.bin" />
+    <None Include="Library\ShaderCache\e\e209ee5dfd0eaf529a7d629233ba1d0d.bin" />
+    <None Include="Library\ShaderCache\e\e2b52be9e9da3f3dc5a2f536d46f46c0.bin" />
+    <None Include="Library\ShaderCache\e\e41c600a341355c7ebe82f9e98dc5b32.bin" />
+    <None Include="Library\ShaderCache\e\e64224705ce843905adb5bd968a6e557.bin" />
+    <None Include="Library\ShaderCache\e\e6524484a25d57bb9e72c99e9a4b2d56.bin" />
+    <None Include="Library\ShaderCache\e\e6b4fdc2981a610ec346742f6b168c83.bin" />
+    <None Include="Library\ShaderCache\e\ea2388fc56e61663475705bc60e37a79.bin" />
+    <None Include="Library\ShaderCache\e\ea28cbb1d23723019a6fa19e9d3fe92e.bin" />
+    <None Include="Library\ShaderCache\e\eb1b14ac357c1022b998d743abdb311a.bin" />
+    <None Include="Library\ShaderCache\e\ee6b1a9d5bd1906c427889ecf1c68aca.bin" />
+    <None Include="Library\ShaderCache\f\f0a462f0a1f9db46cadb5060ba3aa47e.bin" />
+    <None Include="Library\ShaderCache\f\f427de7ea798f5f6551d1b0b8c244860.bin" />
+    <None Include="Library\ShaderCache\f\f51cf6e83a20eb5fafeb7de4ab4c3526.bin" />
+    <None Include="Library\ShaderCache\f\f55f284f82f3e004467384a22fd0f551.bin" />
+    <None Include="Library\ShaderCache\f\f9abce7769acf5b994a39c9552fc35f6.bin" />
+    <None Include="Library\ShaderCache\f\f9bd3768538e77f542aaa9c1d3238a0a.bin" />
+    <None Include="Library\ShaderCache\f\fa9e54295bb938111c77e1a658008d5a.bin" />
+    <None Include="Library\ShaderCache\f\faa0e25b20913926a077031a05afb4d5.bin" />
+    <None Include="Library\ShaderCache\f\fbb75366ebad6a72cb65623171141437.bin" />
+    <None Include="Library\ShaderCache\f\fc1667c5ef55dfd236fdc1e49e987c45.bin" />
+    <None Include="Library\ShaderCache\f\fc1e6fd01be1ec77c086c25ae878c51d.bin" />
+    <None Include="Library\ShaderCache\f\fe767dcc457a891cb7e06eda22a5921d.bin" />
+    <None Include="Library\shadercompiler-UnityShaderCompiler.exe0.log" />
+    <None Include="Library\SpriteAtlasDatabase.asset" />
+    <None Include="Library\TilemapEditorUserSettings.asset" />
+    <None Include="obj\16972_dentist_pick.obj" />
+    <None Include="obj\16972_dentist_pick.obj.meta" />
+    <None Include="obj\17221_Curette.obj" />
+    <None Include="obj\17221_Curette.obj.meta" />
+    <None Include="obj\compactor.meta" />
+    <None Include="obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\drill.meta" />
+    <None Include="obj\excavator.meta" />
+    <None Include="obj\filler.meta" />
+    <None Include="obj\Final_UV_light.fbx" />
+    <None Include="obj\Final_UV_light.fbx.meta" />
+    <None Include="obj\Materials.meta" />
+    <None Include="obj\Scripts.meta" />
+    <None Include="obj\teeth-sep.fbx" />
+    <None Include="obj\teeth-sep.fbx.meta" />
+    <None Include="obj\ToothEventEmitter.cs.meta" />
+    <None Include="Packages\manifest.json" />
+    <None Include="ProjectSettings\AudioManager.asset" />
+    <None Include="ProjectSettings\ClusterInputManager.asset" />
+    <None Include="ProjectSettings\DynamicsManager.asset" />
+    <None Include="ProjectSettings\EditorBuildSettings.asset" />
+    <None Include="ProjectSettings\EditorSettings.asset" />
+    <None Include="ProjectSettings\GraphicsSettings.asset" />
+    <None Include="ProjectSettings\InputManager.asset" />
+    <None Include="ProjectSettings\NavMeshAreas.asset" />
+    <None Include="ProjectSettings\NetworkManager.asset" />
+    <None Include="ProjectSettings\Physics2DSettings.asset" />
+    <None Include="ProjectSettings\PresetManager.asset" />
+    <None Include="ProjectSettings\ProjectSettings.asset" />
+    <None Include="ProjectSettings\QualitySettings.asset" />
+    <None Include="ProjectSettings\TagManager.asset" />
+    <None Include="ProjectSettings\TimeManager.asset" />
+    <None Include="ProjectSettings\UnityConnectSettings.asset" />
+    <None Include="Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert" />
+    <None Include="Temp\UnityLockfile" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/Tamirys/Unity/Simulador/Teste/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/Tamirys/Unity/Simulador/Teste/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/Tamirys/Unity/Simulador/Teste/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Tamirys/Unity/Simulador/Teste/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/Tamirys/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/Tamirys/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\HapticPlugin\OHToUnityBridge.dll" />
+    <Content Include="Assets\HapticPlugin\OHToUnityBridge.pdb" />
+    <Content Include="Assets\Materials\Textures\texture.jpg" />
+    <Content Include="Assets\Materials\Textures\texture_.jpg" />
+    <Content Include="Assets\Models\excavator\textures\excavator_mesh_DefaultMaterial_AlbedoTransparency.png" />
+    <Content Include="Assets\Models\excavator\textures\excavator_mesh_DefaultMaterial_MetallicSmoothness.png" />
+    <Content Include="Assets\Models\excavator\textures\excavator_mesh_DefaultMaterial_Normal.png" />
+    <Content Include="Library\LastSceneManagerSetup.txt" />
+    <Content Include="Library\LibraryFormatVersion.txt" />
+    <Content Include="Library\ScriptAssemblies\Assembly-CSharp.dll" />
+    <Content Include="Library\ScriptAssemblies\Assembly-CSharp.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll" />
+    <Content Include="Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\ScriptAssemblies\Unity.TextMeshPro.dll" />
+    <Content Include="Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll" />
+    <Content Include="Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\ScriptAssemblies\UnityEditor.StandardEvents.dll" />
+    <Content Include="Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProjectSettings\ProjectVersion.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Materials\Textures\Temp\bin\Debug\" />
+    <Folder Include="Assets\Materials\Textures\Temp\ProcessJobs\" />
+    <Folder Include="Assets\Materials\Textures\Temp\__Backupscenes\" />
+    <Folder Include="Library\metadata\08\" />
+    <Folder Include="Library\metadata\0b\" />
+    <Folder Include="Library\metadata\0f\" />
+    <Folder Include="Library\metadata\14\" />
+    <Folder Include="Library\metadata\1d\" />
+    <Folder Include="Library\metadata\1e\" />
+    <Folder Include="Library\metadata\1f\" />
+    <Folder Include="Library\metadata\24\" />
+    <Folder Include="Library\metadata\52\" />
+    <Folder Include="Library\metadata\56\" />
+    <Folder Include="Library\metadata\5d\" />
+    <Folder Include="Library\metadata\67\" />
+    <Folder Include="Library\metadata\82\" />
+    <Folder Include="Library\metadata\8a\" />
+    <Folder Include="Library\metadata\91\" />
+    <Folder Include="Library\metadata\a0\" />
+    <Folder Include="Library\metadata\a1\" />
+    <Folder Include="Library\metadata\a4\" />
+    <Folder Include="Library\metadata\ac\" />
+    <Folder Include="Library\metadata\ae\" />
+    <Folder Include="Library\metadata\b4\" />
+    <Folder Include="Library\metadata\df\" />
+    <Folder Include="Library\metadata\e7\" />
+    <Folder Include="Library\metadata\f9\" />
+    <Folder Include="Library\metadata\fb\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Temp\bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
